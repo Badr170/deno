@@ -1,0 +1,3353 @@
+<package>
+	<id>com.BADR.locationservicecc_0.1-5_iphoneos-arm.deb</id>
+	<name>LocationService (CCSupport)</name>
+	<version>0.1-5</version>
+	<compatibility>
+		<firmware>
+			<miniOS>12.0</miniOS>
+			<maxiOS>14.4</maxiOS>
+			<otherVersions>unsupported</otherVersions>
+		</firmware>
+	</compatibility>
+	<dependencies>
+		<package>com.BADR.locationservicecc</package>
+	</dependencies>
+	<shortDescription></shortDescription>
+	<descriptionlist>
+  <description>The colors of the improvement of some features</description>
+  <descriptionpg>ios12.0-ios14.4</description>
+	</descriptionlist>
+	<screenshots></screenshots>
+	<changelog>
+		<change>Initial release</change>
+	</changelog>
+	<links></links>
+</package>
+
+<package>
+	<id>com.BADR.cthulhu_1.0.7_iphoneos-arm.deb</id>
+	<name>Cthulhu</name>
+	<version>1.0.7</version>
+	<compatibility>
+		<firmware>
+			<miniOS>12.0</miniOS>
+			<maxiOS>14.4</maxiOS>
+			<otherVersions>unsupported</otherVersions>
+		</firmware>
+	</compatibility>
+	<dependencies>
+		<package>com.BADR.cthulhu</package>
+	</dependencies>
+	<shortDescription>Hido Gilprick</shortDescription>
+	<descriptionlist>
+		<description>re formatted correct</description>
+    <description>ios12.0-ios14.4</description>
+	</descriptionlist>
+	<screenshots></screenshots>
+	<changelog>
+		<change>Initial release</change>
+	</changelog>
+	<links></links>
+</package>
+
+<package>
+	<id>com.BADR.icleanerpro_7.8.2_iphoneos-arm.deb</id>
+	<name>iCleaner Pro</name>
+	<version>7.8.2</version>
+	<compatibility>
+		<firmware>
+			<miniOS>12.0</miniOS>
+			<maxiOS>14.4</maxiOS>
+			<otherVersions>unsupported</otherVersions>
+		</firmware>
+	</compatibility>
+	<dependencies>
+		<package>com.BADR.icleanerpro</package>
+	</dependencies>
+	<shortDescription></shortDescription>
+	<descriptionlist>
+		<description>re formatted correct</description>
+    <description>ios12.0-ios14.4</description>
+	</descriptionlist>
+	<screenshots></screenshots>
+	<changelog>
+		<change>Initial release</change>
+	</changelog>
+	<links></links>
+</package>
+
+<package>
+	<id>com.BADR.selector_0.1.4_iphoneos-arm.deb</id>
+	<name>Selector</name>
+	<version>0.1.4</version>
+	<compatibility>
+		<firmware>
+			<miniOS>12.0</miniOS>
+			<maxiOS>14.4</maxiOS>
+			<otherVersions>unsupported</otherVersions>
+		</firmware>
+	</compatibility>
+	<dependencies>
+		<package>com.BADR.selector</package>
+	</dependencies>
+	<shortDescription></shortDescription>
+	<descriptionlist>
+		<description>re formatted correct</description>
+    <description>ios12.0-ios14.4</description>
+	</descriptionlist>
+	<screenshots></screenshots>
+	<changelog>
+		<change>Initial release</change>
+	</changelog>
+	<links></links>
+</package>
+
+<package>
+	<id>com.BADR.pencilchargingindicator_1.2~b7_iphoneos-arm.deb</id>
+	<name>PencilChargingIndicator</name>
+	<version>1.2~b7</version>
+	<compatibility>
+		<firmware>
+			<miniOS>12.0</miniOS>
+			<maxiOS>14.4</maxiOS>
+			<otherVersions>unsupported</otherVersions>
+		</firmware>
+	</compatibility>
+	<dependencies>
+		<package>com.BADR.pencilchargingindicator</package>
+	</dependencies>
+	<shortDescription></shortDescription>
+	<descriptionlist>
+		<description>re formatted correct</description>
+    <description>ios12.0-ios14.4</description>
+	</descriptionlist>
+	<screenshots></screenshots>
+	<changelog>
+		<change>Initial release</change>
+	</changelog>
+	<links></links>
+</package>
+
+<package>
+	<id>com.BADR.sareth_1.16-1_iphoneos-arm.deb</id>
+	<name>Sareth</name>
+	<version>1.16-1</version>
+	<compatibility>
+		<firmware>
+			<miniOS>12.0</miniOS>
+			<maxiOS>14.4</maxiOS>
+			<otherVersions>unsupported</otherVersions>
+		</firmware>
+	</compatibility>
+	<dependencies>
+		<package>com.BADR.sareth</package>
+	</dependencies>
+	<shortDescription></shortDescription>
+	<descriptionlist>
+		<description>re formatted correct</description>
+    <description>ios12.0-ios14.4</description>
+	</descriptionlist>
+	<screenshots></screenshots>
+	<changelog>
+		<change>Initial release</change>
+	</changelog>
+	<links></links>
+</package>
+
+<package>
+	<id>com.BADR.arc_1.0.4_iphoneos-arm.deb</id>
+	<name>Arc</name>
+	<version>1.0.4</version>
+	<compatibility>
+		<firmware>
+			<miniOS>12.0</miniOS>
+			<maxiOS>14.4</maxiOS>
+			<otherVersions>unsupported</otherVersions>
+		</firmware>
+	</compatibility>
+	<dependencies>
+		<package>com.BADR.arc</package>
+	</dependencies>
+	<shortDescription></shortDescription>
+	<descriptionlist>
+		<description>re formatted correct</description>
+    <description>ios12.0-ios14.4</description>
+	</descriptionlist>
+	<screenshots></screenshots>
+	<changelog>
+		<change>Initial release</change>
+	</changelog>
+	<links></links>
+</package>
+
+<package>
+	<id>com.BADR.magmaevo_2.0.10_iphoneos-arm.deb</id>
+	<name>Magma Evo</name>
+	<version>2.0.10</version>
+	<compatibility>
+		<firmware>
+			<miniOS>12.0</miniOS>
+			<maxiOS>14.4</maxiOS>
+			<otherVersions>unsupported</otherVersions>
+		</firmware>
+	</compatibility>
+	<dependencies>
+		<package>com.BADR.magmaevo</package>
+	</dependencies>
+	<shortDescription>Features of the dok</shortDescription>
+	<descriptionlist>
+		<description></description>
+    <description>ios12.0-ios14.4</description>
+	</descriptionlist>
+	<screenshots></screenshots>
+	<changelog>
+		<change>Initial release</change>
+	</changelog>
+	<links></links>
+</package>
+
+<package>
+	<id>com.BADR.choicy_1.4_iphoneos-arm.deb</id>
+	<name>Choicy</name>
+	<version>1.4</version>
+	<compatibility>
+		<firmware>
+			<miniOS>12.0</miniOS>
+			<maxiOS>14.4</maxiOS>
+			<otherVersions>unsupported</otherVersions>
+		</firmware>
+	</compatibility>
+	<dependencies>
+		<package>com.BADR.choicy</package>
+	</dependencies>
+	<shortDescription>Features of the dok</shortDescription>
+	<descriptionlist>
+		<description></description>
+    <description>ios12.0-ios14.4</description>
+	</descriptionlist>
+	<screenshots></screenshots>
+	<changelog>
+		<change>Initial release</change>
+	</changelog>
+	<links></links>
+</package>
+
+<package>
+	<id>com.BADR.snapper2cc_1.0_iphoneos-arm.deb</id>
+	<name>Snapper2 CC Toggle</name>
+	<version>1.0</version>
+	<compatibility>
+		<firmware>
+			<miniOS>12.0</miniOS>
+			<maxiOS>14.4</maxiOS>
+			<otherVersions>unsupported</otherVersions>
+		</firmware>
+	</compatibility>
+	<dependencies>
+		<package>com.BADR.snapper2cc</package>
+	</dependencies>
+	<shortDescription></shortDescription>
+	<descriptionlist>
+		<description>re formatted correct</description>
+    <description>ios12.0-ios14.4</description>
+	</descriptionlist>
+	<screenshots></screenshots>
+	<changelog>
+		<change>Initial release</change>
+	</changelog>
+	<links></links>
+</package>
+
+<package>
+	<id>com.BADR.switcher_1.1.5_iphoneos-arm.deb</id>
+	<name>Switcher</name>
+	<version>1.1.5</version>
+	<compatibility>
+		<firmware>
+			<miniOS>12.0</miniOS>
+			<maxiOS>14.4</maxiOS>
+			<otherVersions>unsupported</otherVersions>
+		</firmware>
+	</compatibility>
+	<dependencies>
+		<package>com.BADR.switcher</package>
+	</dependencies>
+	<shortDescription>Features of the dok</shortDescription>
+	<descriptionlist>
+		<description></description>
+    <description>ios12.0-ios14.4</description>
+	</descriptionlist>
+	<screenshots></screenshots>
+	<changelog>
+		<change>Initial release</change>
+	</changelog>
+	<links></links>
+</package>
+
+<package>
+	<id>com.BADR.edge_3.0_iphoneos-arm.deb</id>
+	<name>Edge</name>
+	<version>3.0</version>
+	<compatibility>
+		<firmware>
+			<miniOS>12.0</miniOS>
+			<maxiOS>14.4</maxiOS>
+			<otherVersions>unsupported</otherVersions>
+		</firmware>
+	</compatibility>
+	<dependencies>
+		<package>com.BADR.edge</package>
+	</dependencies>
+	<shortDescription></shortDescription>
+	<descriptionlist>
+		<description>re formatted correct</description>
+    <description>ios12.0-ios14.4</description>
+	</descriptionlist>
+	<screenshots></screenshots>
+	<changelog>
+		<change>Initial release</change>
+	</changelog>
+	<links></links>
+</package>
+
+<package>
+	<id>com.BADR.contactsextended_1.4.1_iphoneos-arm.deb</id>
+	<name>Contacts Extended</name>
+	<version>1.4.1</version>
+	<compatibility>
+		<firmware>
+			<miniOS>12.0</miniOS>
+			<maxiOS>14.4</maxiOS>
+			<otherVersions>unsupported</otherVersions>
+		</firmware>
+	</compatibility>
+	<dependencies>
+		<package>com.BADR.contactsextended</package>
+	</dependencies>
+	<shortDescription></shortDescription>
+	<descriptionlist>
+		<description>re formatted correct</description>
+    <description>ios12.0-ios14.4</description>
+	</descriptionlist>
+	<screenshots></screenshots>
+	<changelog>
+		<change>Initial release</change>
+	</changelog>
+	<links></links>
+</package>
+
+<package>
+	<id>com.BADR.a-bypass_1.5.4_iphoneos-arm.deb</id>
+	<name>A-Bypass</name>
+	<version>1.5.4</version>
+	<compatibility>
+		<firmware>
+			<miniOS>12.0</miniOS>
+			<maxiOS>14.4</maxiOS>
+			<otherVersions>unsupported</otherVersions>
+		</firmware>
+	</compatibility>
+	<dependencies>
+		<package>com.BADR.a-bypass</package>
+	</dependencies>
+	<shortDescription></shortDescription>
+	<descriptionlist>
+		<description>re formatted correct</description>
+    <description>ios12.0-ios14.4</description>
+	</descriptionlist>
+	<screenshots></screenshots>
+	<changelog>
+		<change>Initial release</change>
+	</changelog>
+	<links></links>
+</package>
+
+<package>
+	<id>com.BADR.cydown_7.1.2_iphoneos-arm.deb</id>
+	<name>CyDown</name>
+	<version>7.1.2</version>
+	<compatibility>
+		<firmware>
+			<miniOS>12.0</miniOS>
+			<maxiOS>14.4</maxiOS>
+			<otherVersions>unsupported</otherVersions>
+		</firmware>
+	</compatibility>
+	<dependencies>
+		<package>com.BADR.cydown</package>
+	</dependencies>
+	<shortDescription></shortDescription>
+	<descriptionlist>
+		<description>re formatted correct</description>
+    <description>ios12.0-ios14.4</description>
+	</descriptionlist>
+	<screenshots></screenshots>
+	<changelog>
+		<change>Initial release</change>
+	</changelog>
+	<links></links>
+</package>
+
+<package>
+	<id>com.BADR.playmusiconrecord_1.0.3_iphoneos-arm.deb</id>
+	<name>PlayMusicOnRecord</name>
+	<version>1.0.3</version>
+	<compatibility>
+		<firmware>
+			<miniOS>9.0</miniOS>
+			<maxiOS>14.0</maxiOS>
+			<otherVersions>unsupported</otherVersions>
+		</firmware>
+	</compatibility>
+	<dependencies>
+		<package>com.BADR.playmusiconrecord</package>
+	</dependencies>
+	<shortDescription></shortDescription>
+	<descriptionlist>
+		<description>re formatted correct</description>
+    <description>ios9.0-ios14.4</description>
+	</descriptionlist>
+	<screenshots></screenshots>
+	<changelog>
+		<change>Initial release</change>
+	</changelog>
+	<links></links>
+</package>
+
+<package>
+	<id>com.BADR.flexcrack_1.0_iphoneos-arm.deb</id>
+	<name>FlexCrack</name>
+	<version>1.0</version>
+	<compatibility>
+		<firmware>
+			<miniOS>9.0</miniOS>
+			<maxiOS>14.0</maxiOS>
+			<otherVersions>unsupported</otherVersions>
+		</firmware>
+	</compatibility>
+	<dependencies>
+		<package>com.BADR.flexcrack</package>
+	</dependencies>
+	<shortDescription></shortDescription>
+	<descriptionlist>
+		<description>re formatted correct</description>
+    <description>ios9.0-ios14.4</description>
+	</descriptionlist>
+	<screenshots></screenshots>
+	<changelog>
+		<change>Initial release</change>
+	</changelog>
+	<links></links>
+</package>
+
+<package>
+	<id>com.BADR.safarifeatures_1.3.3_iphoneos-arm.deb</id>
+	<name>Safari Features</name>
+	<version>1.3.3</version>
+	<compatibility>
+		<firmware>
+			<miniOS>12.0</miniOS>
+			<maxiOS>14.4</maxiOS>
+			<otherVersions>unsupported</otherVersions>
+		</firmware>
+	</compatibility>
+	<dependencies>
+		<package>com.BADR.safarifeatures</package>
+	</dependencies>
+	<shortDescription></shortDescription>
+	<descriptionlist>
+		<description>re formatted correct</description>
+    <description>ios12.0-ios14.4</description>
+	</descriptionlist>
+	<screenshots></screenshots>
+	<changelog>
+		<change>Initial release</change>
+	</changelog>
+	<links></links>
+</package>
+
+<package>
+	<id>com.BADR.cracktool4_4.0~beta9f_iphoneos-arm.deb</id>
+	<name>CrackTool4</name>
+	<version>4.0~beta9f</version>
+	<compatibility>
+		<firmware>
+			<miniOS>12.0</miniOS>
+			<maxiOS>14.4</maxiOS>
+			<otherVersions>unsupported</otherVersions>
+		</firmware>
+	</compatibility>
+	<dependencies>
+		<package>com.BADR.cracktool4</package>
+	</dependencies>
+	<shortDescription></shortDescription>
+	<descriptionlist>
+		<description>re formatted correct</description>
+    <description>ios12.0-ios14.4</description>
+	</descriptionlist>
+	<screenshots></screenshots>
+	<changelog>
+		<change>Initial release</change>
+	</changelog>
+	<links></links>
+</package>
+
+<package>
+	<id>com.BADR.WAUnlimitedSend_1.2.0_iphoneos-arm.deb</id>
+	<name>WAUnlimitedSend</name>
+	<version>1.2.0</version>
+	<compatibility>
+		<firmware>
+			<miniOS>12.0</miniOS>
+			<maxiOS>14.4</maxiOS>
+			<otherVersions>unsupported</otherVersions>
+		</firmware>
+	</compatibility>
+	<dependencies>
+		<package>com.BADR.WAUnlimitedSend</package>
+	</dependencies>
+	<shortDescription></shortDescription>
+	<descriptionlist>
+		<description>re formatted correct</description>
+    <description>ios12.0-ios14.4</description>
+	</descriptionlist>
+	<screenshots></screenshots>
+	<changelog>
+		<change>Initial release</change>
+	</changelog>
+	<links></links>
+</package>
+
+<package>
+	<id>com.BADR.itranslate_0.0.1-6_iphoneos-arm.deb</id>
+	<name>iTranslate</name>
+	<version>0.0.1-6</version>
+	<compatibility>
+		<firmware>
+			<miniOS>12.0</miniOS>
+			<maxiOS>14.4</maxiOS>
+			<otherVersions>unsupported</otherVersions>
+		</firmware>
+	</compatibility>
+	<dependencies>
+		<package>com.BADR.itranslate</package>
+	</dependencies>
+	<shortDescription></shortDescription>
+	<descriptionlist>
+		<description>re formatted correct</description>
+    <description>ios12.0-ios14.4</description>
+	</descriptionlist>
+	<screenshots></screenshots>
+	<changelog>
+		<change>Initial release</change>
+	</changelog>
+	<links></links>
+</package>
+
+<package>
+	<id>com.BADR.batteryx_0.0.5_iphoneos-arm.deb</id>
+	<name>BatteryPercentageX</name>
+	<version>0.0.5</version>
+	<compatibility>
+		<firmware>
+			<miniOS>12.0</miniOS>
+			<maxiOS>14.8</maxiOS>
+			<otherVersions>unsupported</otherVersions>
+		</firmware>
+	</compatibility>
+	<dependencies>
+		<package>com.BADR.batteryx</package>
+	</dependencies>
+	<shortDescription></shortDescription>
+	<descriptionlist>
+		<description>re formatted correct</description>
+    <description>ios12.0-ios14.8</description>
+	</descriptionlist>
+	<screenshots></screenshots>
+	<changelog>
+		<change>Initial release</change>
+	</changelog>
+	<links></links>
+</package>
+
+<package>
+	<id>com.BADR.icontweak_1.0.9_iphoneos-arm.deb</id>
+	<name>IconTweak</name>
+	<version>1.0.9</version>
+	<compatibility>
+		<firmware>
+			<miniOS>12.0</miniOS>
+			<maxiOS>14.4</maxiOS>
+			<otherVersions>unsupported</otherVersions>
+		</firmware>
+	</compatibility>
+	<dependencies>
+		<package>com.BADR.icontweak</package>
+	</dependencies>
+	<shortDescription></shortDescription>
+	<descriptionlist>
+		<description>re formatted correct</description>
+    <description>ios12.0-ios14.4</description>
+	</descriptionlist>
+	<screenshots></screenshots>
+	<changelog>
+		<change>Initial release</change>
+	</changelog>
+	<links></links>
+</package>
+
+<package>
+	<id>com.BADR.networkdisabler_1.0.1_iphoneos-arm.deb</id>
+	<name>NetworkDisabler</name>
+	<version>1.0.1</version>
+	<compatibility>
+		<firmware>
+			<miniOS>12.0</miniOS>
+			<maxiOS>14.4</maxiOS>
+			<otherVersions>unsupported</otherVersions>
+		</firmware>
+	</compatibility>
+	<dependencies>
+		<package>com.BADR.networkdisabler</package>
+	</dependencies>
+	<shortDescription></shortDescription>
+	<descriptionlist>
+		<description>re formatted correct</description>
+    <description>ios12.0-ios14.4</description>
+	</descriptionlist>
+	<screenshots></screenshots>
+	<changelog>
+		<change>Initial release</change>
+	</changelog>
+	<links></links>
+</package>
+
+<package>
+	<id>com.BADR.powerselector11_1.3.4_iphoneos-arm.deb</id>
+	<name>PowerSelector(iOS 11 to 14)</name>
+	<version>1.3.4</version>
+	<compatibility>
+		<firmware>
+			<miniOS>12.0</miniOS>
+			<maxiOS>14.4</maxiOS>
+			<otherVersions>unsupported</otherVersions>
+		</firmware>
+	</compatibility>
+	<dependencies>
+		<package>com.BADR.powerselector11</package>
+	</dependencies>
+	<shortDescription></shortDescription>
+	<descriptionlist>
+		<description>re formatted correct</description>
+    <description>ios12.0-ios14.4</description>
+	</descriptionlist>
+	<screenshots></screenshots>
+	<changelog>
+		<change>Initial release</change>
+	</changelog>
+	<links></links>
+</package>
+
+<package>
+	<id>com.BADR.celldia_0.0~beta5_iphoneos-arm.deb</id>
+	<name>CellDia</name>
+	<version>0.0~beta5</version>
+	<compatibility>
+		<firmware>
+			<miniOS>12.0</miniOS>
+			<maxiOS>14.4</maxiOS>
+			<otherVersions>unsupported</otherVersions>
+		</firmware>
+	</compatibility>
+	<dependencies>
+		<package>com.BADR.celldia</package>
+	</dependencies>
+	<shortDescription></shortDescription>
+	<descriptionlist>
+		<description>re formatted correct</description>
+    <description>ios12.0-ios14.4</description>
+	</descriptionlist>
+	<screenshots></screenshots>
+	<changelog>
+		<change>Initial release</change>
+	</changelog>
+	<links></links>
+</package>
+
+<package>
+	<id>com.BADR.goodwifi_0.0~beta6_iphoneos-arm.deb</id>
+	<name>GoodWiFi</name>
+	<version>0.0~beta6</version>
+	<compatibility>
+		<firmware>
+			<miniOS>12.0</miniOS>
+			<maxiOS>14.4</maxiOS>
+			<otherVersions>unsupported</otherVersions>
+		</firmware>
+	</compatibility>
+	<dependencies>
+		<package>com.BADR.goodwifi</package>
+	</dependencies>
+	<shortDescription></shortDescription>
+	<descriptionlist>
+		<description>re formatted correct</description>
+    <description>ios12.0-ios14.4</description>
+	</descriptionlist>
+	<screenshots></screenshots>
+	<changelog>
+		<change>Initial release</change>
+	</changelog>
+	<links></links>
+</package>
+
+<package>
+	<id>com.BADR.mimport_0.0~beta40_iphoneos-arm.deb</id>
+	<name>MImport</name>
+	<version>0.0~beta40</version>
+	<compatibility>
+		<firmware>
+			<miniOS>12.0</miniOS>
+			<maxiOS>14.4</maxiOS>
+			<otherVersions>unsupported</otherVersions>
+		</firmware>
+	</compatibility>
+	<dependencies>
+		<package>com.BADR.mimport</package>
+	</dependencies>
+	<shortDescription></shortDescription>
+	<descriptionlist>
+		<description>re formatted correct</description>
+    <description>ios12.0-ios14.4</description>
+	</descriptionlist>
+	<screenshots></screenshots>
+	<changelog>
+		<change>Initial release</change>
+	</changelog>
+	<links></links>
+</package>
+
+<package>
+	<id>com.BADR.amandus_1.0.1_iphoneos-arm.deb</id>
+	<name>Amandus</name>
+	<version>1.0.1</version>
+	<compatibility>
+		<firmware>
+			<miniOS>12.0</miniOS>
+			<maxiOS>14.4</maxiOS>
+			<otherVersions>unsupported</otherVersions>
+		</firmware>
+	</compatibility>
+	<dependencies>
+		<package>com.BADR.amandus</package>
+	</dependencies>
+	<shortDescription></shortDescription>
+	<descriptionlist>
+		<description>re formatted correct</description>
+    <description>ios12.0-ios14.4</description>
+	</descriptionlist>
+	<screenshots></screenshots>
+	<changelog>
+		<change>Initial release</change>
+	</changelog>
+	<links></links>
+</package>
+
+<package>
+	<id>com.BADR.safariplus_1.7.18-3_iphoneos-arm.deb</id>
+	<name>Safari Plus</name>
+	<version>1.7.18-3</version>
+	<compatibility>
+		<firmware>
+			<miniOS>12.0</miniOS>
+			<maxiOS>14.4</maxiOS>
+			<otherVersions>unsupported</otherVersions>
+		</firmware>
+	</compatibility>
+	<dependencies>
+		<package>com.BADR.safariplus</package>
+	</dependencies>
+	<shortDescription></shortDescription>
+	<descriptionlist>
+		<description>re formatted correct</description>
+    <description>ios12.0-ios14.4</description>
+	</descriptionlist>
+	<screenshots></screenshots>
+	<changelog>
+		<change>Initial release</change>
+	</changelog>
+	<links></links>
+</package>
+
+<package>
+	<id>com.BADR.a-font_1.9.3_iphoneos-arm.deb</id>
+	<name>A-Font</name>
+	<version>1.9.3</version>
+	<compatibility>
+		<firmware>
+			<miniOS>12.0</miniOS>
+			<maxiOS>14.4</maxiOS>
+			<otherVersions>unsupported</otherVersions>
+		</firmware>
+	</compatibility>
+	<dependencies>
+		<package>com.BADR.a-font</package>
+	</dependencies>
+	<shortDescription></shortDescription>
+	<descriptionlist>
+		<description>re formatted correct</description>
+    <description>ios12.0-ios14.4</description>
+	</descriptionlist>
+	<screenshots></screenshots>
+	<changelog>
+		<change>Initial release</change>
+	</changelog>
+	<links></links>
+</package>
+
+<package>
+	<id>com.BADR.bundley_1.0.1_iphoneos-arm.deb</id>
+	<name>Bundley</name>
+	<version>1.0.1</version>
+	<compatibility>
+		<firmware>
+			<miniOS>12.0</miniOS>
+			<maxiOS>14.4</maxiOS>
+			<otherVersions>unsupported</otherVersions>
+		</firmware>
+	</compatibility>
+	<dependencies>
+		<package>com.BADR.bundley</package>
+	</dependencies>
+	<shortDescription></shortDescription>
+	<descriptionlist>
+		<description>re formatted correct</description>
+    <description>ios12.0-ios14.4</description>
+	</descriptionlist>
+	<screenshots></screenshots>
+	<changelog>
+		<change>Initial release</change>
+	</changelog>
+	<links></links>
+</package>
+
+<package>
+	<id>com.BADR.addsource_3.2_iphoneos-arm.deb</id>
+	<name>addsource</name>
+	<version>3.2</version>
+	<compatibility>
+		<firmware>
+			<miniOS>12.0</miniOS>
+			<maxiOS>14.4</maxiOS>
+			<otherVersions>unsupported</otherVersions>
+		</firmware>
+	</compatibility>
+	<dependencies>
+		<package>com.BADR.addsource</package>
+	</dependencies>
+	<shortDescription></shortDescription>
+	<descriptionlist>
+		<description>re formatted correct</description>
+    <description>ios12.0-ios14.4</description>
+	</descriptionlist>
+	<screenshots></screenshots>
+	<changelog>
+		<change>Initial release</change>
+	</changelog>
+	<links></links>
+</package>
+
+<package>
+	<id>com.BADR.crackerxi_1.1.16_iphoneos-arm.deb</id>
+	<name>CrackerXI</name>
+	<version>1.1.16</version>
+	<compatibility>
+		<firmware>
+			<miniOS>12.0</miniOS>
+			<maxiOS>14.4</maxiOS>
+			<otherVersions>unsupported</otherVersions>
+		</firmware>
+	</compatibility>
+	<dependencies>
+		<package>com.BADR.crackerxi</package>
+	</dependencies>
+	<shortDescription></shortDescription>
+	<descriptionlist>
+		<description>re formatted correct</description>
+    <description>ios12.0-ios14.4</description>
+	</descriptionlist>
+	<screenshots></screenshots>
+	<changelog>
+		<change>Initial release</change>
+	</changelog>
+	<links></links>
+</package>
+
+<package>
+	<id>com.BADR.deletecut_0.6_iphoneos-arm.deb</id>
+	<name>DeleteCut</name>
+	<version>0.6</version>
+	<compatibility>
+		<firmware>
+			<miniOS>12.0</miniOS>
+			<maxiOS>14.4</maxiOS>
+			<otherVersions>unsupported</otherVersions>
+		</firmware>
+	</compatibility>
+	<dependencies>
+		<package>com.BADR.deletecut</package>
+	</dependencies>
+	<shortDescription></shortDescription>
+	<descriptionlist>
+		<description>re formatted correct</description>
+    <description>ios12.0-ios14.4</description>
+	</descriptionlist>
+	<screenshots></screenshots>
+	<changelog>
+		<change>Initial release</change>
+	</changelog>
+	<links></links>
+</package>
+
+ <package>
+	<id>com.BADR.systeminfo_2.7.2_iphoneos-arm.deb</id>
+	<name>System Info</name>
+	<version>2.7.2</version>
+	<compatibility>
+		<firmware>
+			<miniOS>12.0</miniOS>
+			<maxiOS>14.4</maxiOS>
+			<otherVersions>unsupported</otherVersions>
+		</firmware>
+	</compatibility>
+	<dependencies>
+		<package>com.BADR.systeminfo</package>
+	</dependencies>
+	<shortDescription></shortDescription>
+	<descriptionlist>
+		<description>re formatted correct</description>
+    <description>ios12.0-ios14.4</description>
+	</descriptionlist>
+	<screenshots></screenshots>
+	<changelog>
+		<change>Initial release</change>
+	</changelog>
+	<links></links>
+</package>
+
+<package>
+	<id>com.BADR.pasithea2_2.2.8_iphoneos-arm.deb</id>
+	<name>Pasithea 2 (iOS 10 to 14)</name>
+	<version>2.2.8</version>
+	<compatibility>
+		<firmware>
+			<miniOS>12.0</miniOS>
+			<maxiOS>14.4</maxiOS>
+			<otherVersions>unsupported</otherVersions>
+		</firmware>
+	</compatibility>
+	<dependencies>
+		<package>com.BADR.pasithea2</package>
+	</dependencies>
+	<shortDescription></shortDescription>
+	<descriptionlist>
+		<description>re formatted correct</description>
+    <description>ios12.0-ios14.4</description>
+	</descriptionlist>
+	<screenshots></screenshots>
+	<changelog>
+		<change>Initial release</change>
+	</changelog>
+	<links></links>
+</package>
+
+<package>
+	<id>com.BADR.actionbar_1.3.7_iphoneos-arm.deb</id>
+	<name>ActionBar</name>
+	<version>1.3.7</version>
+	<compatibility>
+		<firmware>
+			<miniOS>12.0</miniOS>
+			<maxiOS>14.4</maxiOS>
+			<otherVersions>unsupported</otherVersions>
+		</firmware>
+	</compatibility>
+	<dependencies>
+		<package>com.BADR.actionbar</package>
+	</dependencies>
+	<shortDescription></shortDescription>
+	<descriptionlist>
+		<description>re formatted correct</description>
+    <description>ios12.0-ios14.4</description>
+	</descriptionlist>
+	<screenshots></screenshots>
+	<changelog>
+		<change>Initial release</change>
+	</changelog>
+	<links></links>
+</package>
+
+<package>
+	<id>com.BADR.cask_1.2.0_iphoneos-arm.deb</id>
+	<name>Cask 2</name>
+	<version>1.2.0</version>
+	<compatibility>
+		<firmware>
+			<miniOS>12.0</miniOS>
+			<maxiOS>14.4</maxiOS>
+			<otherVersions>unsupported</otherVersions>
+		</firmware>
+	</compatibility>
+	<dependencies>
+		<package>com.BADR.cask</package>
+	</dependencies>
+	<shortDescription></shortDescription>
+	<descriptionlist>
+		<description>re formatted correct</description>
+    <description>ios12.0-ios14.4</description>
+	</descriptionlist>
+	<screenshots></screenshots>
+	<changelog>
+		<change>Initial release</change>
+	</changelog>
+	<links></links>
+</package>
+
+<package>
+	<id>com.BADR.nanofi_1.0.5_iphoneos-arm.deb</id>
+	<name>NanoFi(Apple Watch)</name>
+	<version>1.0.5</version>
+	<compatibility>
+		<firmware>
+			<miniOS>12.0</miniOS>
+			<maxiOS>14.4</maxiOS>
+			<otherVersions>unsupported</otherVersions>
+		</firmware>
+	</compatibility>
+	<dependencies>
+		<package>com.BADR.nanofi</package>
+	</dependencies>
+	<shortDescription></shortDescription>
+	<descriptionlist>
+		<description>re formatted correct</description>
+    <description>ios12.0-ios14.4</description>
+	</descriptionlist>
+	<screenshots></screenshots>
+	<changelog>
+		<change>Initial release</change>
+	</changelog>
+	<links></links>
+</package>
+
+<package>
+	<id>com.BADR.colorswitch_2.0-6_iphoneos-arm.deb</id>
+	<name>Color Switch</name>
+	<version>2.0-6</version>
+	<compatibility>
+		<firmware>
+			<miniOS>12.0</miniOS>
+			<maxiOS>14.4</maxiOS>
+			<otherVersions>unsupported</otherVersions>
+		</firmware>
+	</compatibility>
+	<dependencies>
+		<package>com.BADR.colorswitch</package>
+	</dependencies>
+	<shortDescription></shortDescription>
+	<descriptionlist>
+		<description>re formatted correct</description>
+    <description>ios12.0-ios14.4</description>
+	</descriptionlist>
+	<screenshots></screenshots>
+	<changelog>
+		<change>Initial release</change>
+	</changelog>
+	<links></links>
+</package>
+
+<package>
+	<id>com.BADR.compatimark_1.0.1_iphoneos-arm.deb</id>
+	<name>Compatimark</name>
+	<version>1.0.1</version>
+	<compatibility>
+		<firmware>
+			<miniOS>12.0</miniOS>
+			<maxiOS>14.4</maxiOS>
+			<otherVersions>unsupported</otherVersions>
+		</firmware>
+	</compatibility>
+	<dependencies>
+		<package>com.BADR.compatimark</package>
+	</dependencies>
+	<shortDescription></shortDescription>
+	<descriptionlist>
+		<description>re formatted correct</description>
+    <description>ios12.0-ios14.4</description>
+	</descriptionlist>
+	<screenshots></screenshots>
+	<changelog>
+		<change>Initial release</change>
+	</changelog>
+	<links></links>
+</package>
+
+<package>
+	<id>com.BADR.AppleFileConduit_1.1.5-1_iphoneos-arm.deb</id>
+	<name>Apple File Conduit "2" (iOS 11+, arm64)</name>
+	<version>1.1.5-1</version>
+	<compatibility>
+		<firmware>
+			<miniOS>12.0</miniOS>
+			<maxiOS>14.4</maxiOS>
+			<otherVersions>unsupported</otherVersions>
+		</firmware>
+	</compatibility>
+	<dependencies>
+		<package>com.BADR.AppleFileConduit</package>
+	</dependencies>
+	<shortDescription></shortDescription>
+	<descriptionlist>
+		<description>re formatted correct</description>
+    <description>ios12.0-ios14.4</description>
+	</descriptionlist>
+	<screenshots></screenshots>
+	<changelog>
+		<change>Initial release</change>
+	</changelog>
+	<links></links>
+</package>
+
+<package>
+	<id>com.BADR.myiapcracker2_0.0.5_iphoneos-arm.deb</id>
+	<name>MyiapCracker2</name>
+	<version>0.0.5</version>
+	<compatibility>
+		<firmware>
+			<miniOS>12.0</miniOS>
+			<maxiOS>14.4</maxiOS>
+			<otherVersions>unsupported</otherVersions>
+		</firmware>
+	</compatibility>
+	<dependencies>
+		<package>com.BADR.myiapcracker2</package>
+	</dependencies>
+	<shortDescription></shortDescription>
+	<descriptionlist>
+		<description>re formatted correct</description>
+    <description>ios12.0-ios14.4</description>
+	</descriptionlist>
+	<screenshots></screenshots>
+	<changelog>
+		<change>Initial release</change>
+	</changelog>
+	<links></links>
+</package>
+
+<package>
+	<id>com.BADR.norevoke_0.0.5_iphoneos-arm.deb</id>
+	<name>NoreVoke</name>
+	<version>0.0.5</version>
+	<compatibility>
+		<firmware>
+			<miniOS>12.0</miniOS>
+			<maxiOS>14.4</maxiOS>
+			<otherVersions>unsupported</otherVersions>
+		</firmware>
+	</compatibility>
+	<dependencies>
+		<package>com.BADR.norevoke</package>
+	</dependencies>
+	<shortDescription></shortDescription>
+	<descriptionlist>
+		<description>re formatted correct</description>
+    <description>ios12.0-ios14.4</description>
+	</descriptionlist>
+	<screenshots></screenshots>
+	<changelog>
+		<change>Initial release</change>
+	</changelog>
+	<links></links>
+</package>
+
+<package>
+	<id>com.BADR.prysm_1.9.1_iphoneos-arm.deb</id>
+	<name>Prysm</name>
+	<version>1.9.1</version>
+	<compatibility>
+		<firmware>
+			<miniOS>12.0</miniOS>
+			<maxiOS>14.4</maxiOS>
+			<otherVersions>unsupported</otherVersions>
+		</firmware>
+	</compatibility>
+	<dependencies>
+		<package>com.BADR.prysm</package>
+	</dependencies>
+	<shortDescription></shortDescription>
+	<descriptionlist>
+		<description>re formatted correct</description>
+    <description>ios12.0-ios14.4</description>
+	</descriptionlist>
+	<screenshots></screenshots>
+	<changelog>
+		<change>Initial release</change>
+	</changelog>
+	<links></links>
+</package>
+
+<package>
+	<id>com.BADR.tweakreviews-db_1.1.6_iphoneos-arm.deb</id>
+	<name>TweakReviewsDB</name>
+	<version>1.1.6</version>
+	<compatibility>
+		<firmware>
+			<miniOS>12.0</miniOS>
+			<maxiOS>14.4</maxiOS>
+			<otherVersions>unsupported</otherVersions>
+		</firmware>
+	</compatibility>
+	<dependencies>
+		<package>com.BADR.tweakreviews-db</package>
+	</dependencies>
+	<shortDescription></shortDescription>
+	<descriptionlist>
+		<description>re formatted correct</description>
+    <description>ios12.0-ios14.4</description>
+	</descriptionlist>
+	<screenshots></screenshots>
+	<changelog>
+		<change>Initial release</change>
+	</changelog>
+	<links></links>
+</package>
+
+<package>
+	<id>com.BA7DR.ABypassarabic_1.5.4_iphoneos-arm</id>
+	<name>ABypass(تعريب)</name>
+	<version>1.5.4</version>
+	<compatibility>
+		<firmware>
+			<miniOS>12.0</miniOS>
+			<maxiOS>14.4</maxiOS>
+			<otherVersions>unsupported</otherVersions>
+		</firmware>
+	</compatibility>
+	<dependencies>
+		<package>com.BA7DR.ABypassarabic</package>
+	</dependencies>
+	<shortDescription></shortDescription>
+	<descriptionlist>
+		<description>re formatted correct</description>
+    <description>ios12.0-ios14.4</description>
+	</descriptionlist>
+	<screenshots></screenshots>
+	<changelog>
+		<change>Initial release</change>
+	</changelog>
+	<links></links>
+</package>
+
+<package>
+	<id>com.BADR.photospro_3.0-2_iphoneos-arm.deb</id>
+	<name>PhotosPro</name>
+	<version>3.0-2</version>
+	<compatibility>
+		<firmware>
+			<miniOS>12.0</miniOS>
+			<maxiOS>14.8</maxiOS>
+			<otherVersions>unsupported</otherVersions>
+		</firmware>
+	</compatibility>
+	<dependencies>
+		<package>com.BADR.photospro</package>
+	</dependencies>
+	<shortDescription></shortDescription>
+	<descriptionlist>
+		<description>re formatted correct</description>
+    <description>ios12.0-ios14.8</description>
+	</descriptionlist>
+	<screenshots></screenshots>
+	<changelog>
+		<change>Initial release</change>
+	</changelog>
+	<links></links>
+</package>
+
+<package>
+	<id>com.BADR.arabicfontsbytafonttweakmode_1.0.3_iphoneos-arm.deb</id>
+	<name>ArabicFontsBytaFontTweakMode</name>
+	<version>1.0.3</version>
+	<compatibility>
+		<firmware>
+			<miniOS>12.0</miniOS>
+			<maxiOS>14.4</maxiOS>
+			<otherVersions>unsupported</otherVersions>
+		</firmware>
+	</compatibility>
+	<dependencies>
+		<package>com.BADR.arabicfontsbytafonttweakmode</package>
+	</dependencies>
+	<shortDescription></shortDescription>
+	<descriptionlist>
+		<description>re formatted correct</description>
+    <description>ios12.0-ios14.4</description>
+	</descriptionlist>
+	<screenshots></screenshots>
+	<changelog>
+		<change>Initial release</change>
+	</changelog>
+	<links></links>
+</package>
+
+<package>
+	<id>com.BADR.cydiaplus_1.3_iphoneos-arm.deb</id>
+	<name>CydiaPlus</name>
+	<version>1.3</version>
+	<compatibility>
+		<firmware>
+			<miniOS>12.0</miniOS>
+			<maxiOS>14.4</maxiOS>
+			<otherVersions>unsupported</otherVersions>
+		</firmware>
+	</compatibility>
+	<dependencies>
+		<package>com.BADR.cydiaplus</package>
+	</dependencies>
+	<shortDescription></shortDescription>
+	<descriptionlist>
+		<description>re formatted correct</description>
+    <description>ios12.0-ios14.4</description>
+	</descriptionlist>
+	<screenshots></screenshots>
+	<changelog>
+		<change>Initial release</change>
+	</changelog>
+	<links></links>
+</package>
+
+<package>
+	<id>com.BADR.albumhider_0.0~beta3_iphoneos-arm.deb</id>
+	<name>AlbumHider</name>
+	<version>0.0~beta3</version>
+	<compatibility>
+		<firmware>
+			<miniOS>12.0</miniOS>
+			<maxiOS>14.4</maxiOS>
+			<otherVersions>unsupported</otherVersions>
+		</firmware>
+	</compatibility>
+	<dependencies>
+		<package>com.BADR.albumhider</package>
+	</dependencies>
+	<shortDescription></shortDescription>
+	<descriptionlist>
+		<description>re formatted correct</description>
+    <description>ios12.0-ios14.4</description>
+	</descriptionlist>
+	<screenshots></screenshots>
+	<changelog>
+		<change>Initial release</change>
+	</changelog>
+	<links></links>
+</package>
+
+<package>
+	<id>com.BADR.cacheclearerx_1.1_iphoneos-arm.deb</id>
+	<name>CacheClearerX</name>
+	<version>1.1</version>
+	<compatibility>
+		<firmware>
+			<miniOS>12.0</miniOS>
+			<maxiOS>14.4</maxiOS>
+			<otherVersions>unsupported</otherVersions>
+		</firmware>
+	</compatibility>
+	<dependencies>
+		<package>com.BADR.cacheclearerx</package>
+	</dependencies>
+	<shortDescription></shortDescription>
+	<descriptionlist>
+		<description>re formatted correct</description>
+    <description>ios12.0-ios14.4</description>
+	</descriptionlist>
+	<screenshots></screenshots>
+	<changelog>
+		<change>Initial release</change>
+	</changelog>
+	<links></links>
+</package>
+
+<package>
+	<id>com.BADR.cozybadges_1.2.3_iphoneos-arm.deb</id>
+	<name>CozyBadges</name>
+	<version>1.2.3</version>
+	<compatibility>
+		<firmware>
+			<miniOS>12.0</miniOS>
+			<maxiOS>14.4</maxiOS>
+			<otherVersions>unsupported</otherVersions>
+		</firmware>
+	</compatibility>
+	<dependencies>
+		<package>com.BADR.cozybadges</package>
+	</dependencies>
+	<shortDescription></shortDescription>
+	<descriptionlist>
+		<description>re formatted correct</description>
+    <description>ios12.0-ios14.4</description>
+	</descriptionlist>
+	<screenshots></screenshots>
+	<changelog>
+		<change>Initial release</change>
+	</changelog>
+	<links></links>
+</package>
+
+<package>
+	<id>com.BADR.grabberex_0.9.5_iphoneos-arm.deb</id>
+	<name>GrabberEX</name>
+	<version>0.9.5</version>
+	<compatibility>
+		<firmware>
+			<miniOS>12.0</miniOS>
+			<maxiOS>14.4</maxiOS>
+			<otherVersions>unsupported</otherVersions>
+		</firmware>
+	</compatibility>
+	<dependencies>
+		<package>com.BADR.grabberex</package>
+	</dependencies>
+	<shortDescription></shortDescription>
+	<descriptionlist>
+		<description>re formatted correct</description>
+    <description>ios12.0-ios14.4</description>
+	</descriptionlist>
+	<screenshots></screenshots>
+	<changelog>
+		<change>Initial release</change>
+	</changelog>
+	<links></links>
+</package>
+
+<package>
+	<id>com.BADR.hidekbsettings_1.0.5_iphoneos-arm.deb</id>
+	<name>HideKBSettings (iOS 11 to 13)</name>
+	<version>1.0.5</version>
+	<compatibility>
+		<firmware>
+			<miniOS>12.0</miniOS>
+			<maxiOS>14.4</maxiOS>
+			<otherVersions>unsupported</otherVersions>
+		</firmware>
+	</compatibility>
+	<dependencies>
+		<package>com.BADR.hidekbsettings</package>
+	</dependencies>
+	<shortDescription></shortDescription>
+	<descriptionlist>
+		<description>re formatted correct</description>
+    <description>ios12.0-ios14.4</description>
+	</descriptionlist>
+	<screenshots></screenshots>
+	<changelog>
+		<change>Initial release</change>
+	</changelog>
+	<links></links>
+</package>
+
+<package>
+	<id>com.BADR.instagramautoscroll_0.0.1_iphoneos-arm.deb</id>
+	<name>Instagram AutoScroll</name>
+	<version>0.0.1</version>
+	<compatibility>
+		<firmware>
+			<miniOS>12.0</miniOS>
+			<maxiOS>14.4</maxiOS>
+			<otherVersions>unsupported</otherVersions>
+		</firmware>
+	</compatibility>
+	<dependencies>
+		<package>com.BADR.instagramautoscroll</package>
+	</dependencies>
+	<shortDescription></shortDescription>
+	<descriptionlist>
+		<description>re formatted correct</description>
+    <description>ios12.0-ios14.4</description>
+	</descriptionlist>
+	<screenshots></screenshots>
+	<changelog>
+		<change>Initial release</change>
+	</changelog>
+	<links></links>
+</package>
+
+<package>
+	<id>com.BA7DR.Cydownarabic_7.1.2_iphoneos-arm</id>
+	<name>CyDown(تعريب)</name>
+	<version>7.1.2</version>
+	<compatibility>
+		<firmware>
+			<miniOS>12.0</miniOS>
+			<maxiOS>14.4</maxiOS>
+			<otherVersions>unsupported</otherVersions>
+		</firmware>
+	</compatibility>
+	<dependencies>
+		<package>com.BA7DR.Cydownarabic</package>
+	</dependencies>
+	<shortDescription></shortDescription>
+	<descriptionlist>
+		<description>re formatted correct</description>
+    <description>ios12.0-ios14.4</description>
+	</descriptionlist>
+	<screenshots></screenshots>
+	<changelog>
+		<change>Initial release</change>
+	</changelog>
+	<links></links>
+</package>
+
+<package>
+	<id>com.BADR.prysmdevycc_2.5.7_iphoneos-arm.deb</id>
+	<name>Prysm DevyCC</name>
+	<version>2.5.7</version>
+	<compatibility>
+		<firmware>
+			<miniOS>12.0</miniOS>
+			<maxiOS>14.4</maxiOS>
+			<otherVersions>unsupported</otherVersions>
+		</firmware>
+	</compatibility>
+	<dependencies>
+		<package>com.BADR.prysmdevycc</package>
+	</dependencies>
+	<shortDescription></shortDescription>
+	<descriptionlist>
+		<description>re formatted correct</description>
+    <description>ios12.0-ios14.4</description>
+	</descriptionlist>
+	<screenshots></screenshots>
+	<changelog>
+		<change>Initial release</change>
+	</changelog>
+	<links></links>
+</package>
+
+<package>
+	<id>com.BADR.roundprefs_1.0.8_iphoneos-arm.deb</id>
+	<name>roundPrefs</name>
+	<version>1.0.8</version>
+	<compatibility>
+		<firmware>
+			<miniOS>12.0</miniOS>
+			<maxiOS>14.4</maxiOS>
+			<otherVersions>unsupported</otherVersions>
+		</firmware>
+	</compatibility>
+	<dependencies>
+		<package>com.BADR.roundprefs</package>
+	</dependencies>
+	<shortDescription></shortDescription>
+	<descriptionlist>
+		<description>re formatted correct</description>
+    <description>ios12.0-ios14.4</description>
+	</descriptionlist>
+	<screenshots></screenshots>
+	<changelog>
+		<change>Initial release</change>
+	</changelog>
+	<links></links>
+</package>
+
+<package>
+	<id>com.BADR.selectionplus_1.2.3_iphoneos-arm.deb</id>
+	<name>SelectionPlus</name>
+	<version>1.2.3</version>
+	<compatibility>
+		<firmware>
+			<miniOS>12.0</miniOS>
+			<maxiOS>14.4</maxiOS>
+			<otherVersions>unsupported</otherVersions>
+		</firmware>
+	</compatibility>
+	<dependencies>
+		<package>com.BADR.selectionplus</package>
+	</dependencies>
+	<shortDescription></shortDescription>
+	<descriptionlist>
+		<description>re formatted correct</description>
+    <description>ios12.0-ios14.4</description>
+	</descriptionlist>
+	<screenshots></screenshots>
+	<changelog>
+		<change>Initial release</change>
+	</changelog>
+	<links></links>
+</package>
+
+<package>
+	<id>com.BADR.setcol_1.0-20_iphoneos-arm.deb</id>
+	<name>SetCol</name>
+	<version>1.0-20</version>
+	<compatibility>
+		<firmware>
+			<miniOS>12.0</miniOS>
+			<maxiOS>14.4</maxiOS>
+			<otherVersions>unsupported</otherVersions>
+		</firmware>
+	</compatibility>
+	<dependencies>
+		<package>com.BADR.setcol</package>
+	</dependencies>
+	<shortDescription></shortDescription>
+	<descriptionlist>
+		<description>re formatted correct</description>
+    <description>ios12.0-ios14.4</description>
+	</descriptionlist>
+	<screenshots></screenshots>
+	<changelog>
+		<change>Initial release</change>
+	</changelog>
+	<links></links>
+</package>
+
+<package>
+	<id>com.BADR.topphone2_3.0-1_iphoneos-arm.deb</id>
+	<name>TOPphone</name>
+	<version>3.0-1</version>
+	<compatibility>
+		<firmware>
+			<miniOS>12.0</miniOS>
+			<maxiOS>14.4</maxiOS>
+			<otherVersions>unsupported</otherVersions>
+		</firmware>
+	</compatibility>
+	<dependencies>
+		<package>com.BADR.topphone2</package>
+	</dependencies>
+	<shortDescription></shortDescription>
+	<descriptionlist>
+		<description>re formatted correct</description>
+    <description>ios12.0-ios14.4</description>
+	</descriptionlist>
+	<screenshots></screenshots>
+	<changelog>
+		<change>Initial release</change>
+	</changelog>
+	<links></links>
+</package>
+
+<package>
+	<id>com.BADR.twicol_1.0-9_iphoneos-arm.deb</id>
+	<name>TwiCol</name>
+	<version>1.0-9</version>
+	<compatibility>
+		<firmware>
+			<miniOS>12.0</miniOS>
+			<maxiOS>14.4</maxiOS>
+			<otherVersions>unsupported</otherVersions>
+		</firmware>
+	</compatibility>
+	<dependencies>
+		<package>com.BADR.twicol</package>
+	</dependencies>
+	<shortDescription></shortDescription>
+	<descriptionlist>
+		<description>re formatted correct</description>
+    <description>ios12.0-ios14.4</description>
+	</descriptionlist>
+	<screenshots></screenshots>
+	<changelog>
+		<change>Initial release</change>
+	</changelog>
+	<links></links>
+</package>
+
+<package>
+	<id>com.BADR.videoswipes_1.4-1_iphoneos-arm.deb</id>
+	<name>VideoSwipes</name>
+	<version>1.4-1</version>
+	<compatibility>
+		<firmware>
+			<miniOS>12.0</miniOS>
+			<maxiOS>14.4</maxiOS>
+			<otherVersions>unsupported</otherVersions>
+		</firmware>
+	</compatibility>
+	<dependencies>
+		<package>com.BADR.videoswipes</package>
+	</dependencies>
+	<shortDescription></shortDescription>
+	<descriptionlist>
+		<description>re formatted correct</description>
+    <description>ios12.0-ios14.4</description>
+	</descriptionlist>
+	<screenshots></screenshots>
+	<changelog>
+		<change>Initial release</change>
+	</changelog>
+	<links></links>
+</package>
+
+<package>
+	<id>com.BADR.wanosuggestions_0.0.2_iphoneos-arm.deb</id>
+	<name>WA NoSuggestions</name>
+	<version>0.0.2</version>
+	<compatibility>
+		<firmware>
+			<miniOS>12.0</miniOS>
+			<maxiOS>14.4</maxiOS>
+			<otherVersions>unsupported</otherVersions>
+		</firmware>
+	</compatibility>
+	<dependencies>
+		<package>com.BADR.wanosuggestions</package>
+	</dependencies>
+	<shortDescription></shortDescription>
+	<descriptionlist>
+		<description>re formatted correct</description>
+    <description>ios12.0-ios14.4</description>
+	</descriptionlist>
+	<screenshots></screenshots>
+	<changelog>
+		<change>Initial release</change>
+	</changelog>
+	<links></links>
+</package>
+
+<package>
+	<id>com.BADR.whatcol_1.0-7_iphoneos-arm.deb</id>
+	<name>WhatCol</name>
+	<version>1.0-7</version>
+	<compatibility>
+		<firmware>
+			<miniOS>12.0</miniOS>
+			<maxiOS>14.4</maxiOS>
+			<otherVersions>unsupported</otherVersions>
+		</firmware>
+	</compatibility>
+	<dependencies>
+		<package>com.BADR.whatcol</package>
+	</dependencies>
+	<shortDescription></shortDescription>
+	<descriptionlist>
+		<description>re formatted correct</description>
+    <description>ios12.0-ios14.4</description>
+	</descriptionlist>
+	<screenshots></screenshots>
+	<changelog>
+		<change>Initial release</change>
+	</changelog>
+	<links></links>
+</package>
+
+<package>
+	<id>com.BADR.appaze2_1.4_iphoneos-arm.deb</id>
+	<name>Appaze 2</name>
+	<version>1.4</version>
+	<compatibility>
+		<firmware>
+			<miniOS>12.0</miniOS>
+			<maxiOS>14.4</maxiOS>
+			<otherVersions>unsupported</otherVersions>
+		</firmware>
+	</compatibility>
+	<dependencies>
+		<package>com.BADR.appaze2</package>
+	</dependencies>
+	<shortDescription></shortDescription>
+	<descriptionlist>
+		<description>re formatted correct</description>
+    <description>ios12.0-ios14.4</description>
+	</descriptionlist>
+	<screenshots></screenshots>
+	<changelog>
+		<change>Initial release</change>
+	</changelog>
+	<links></links>
+</package>
+
+<package>
+	<id>com.BADR.boxy4_4.4.2_iphoneos-arm.deb</id>
+	<name>Boxy 4 (iOS 13 - 14)</name>
+	<version>4.4.2</version>
+	<compatibility>
+		<firmware>
+			<miniOS>12.0</miniOS>
+			<maxiOS>14.4</maxiOS>
+			<otherVersions>unsupported</otherVersions>
+		</firmware>
+	</compatibility>
+	<dependencies>
+		<package>com.BADR.boxy4</package>
+	</dependencies>
+	<shortDescription></shortDescription>
+	<descriptionlist>
+		<description>re formatted correct</description>
+    <description>ios12.0-ios14.4</description>
+	</descriptionlist>
+	<screenshots></screenshots>
+	<changelog>
+		<change>Initial release</change>
+	</changelog>
+	<links></links>
+</package>
+
+<package>
+	<id>com.BA7DR.Choicyarabic_1.4_iphoneos-arm</id>
+	<name>Choicy(تعريب)</name>
+	<version>1.4</version>
+	<compatibility>
+		<firmware>
+			<miniOS>12.0</miniOS>
+			<maxiOS>14.4</maxiOS>
+			<otherVersions>unsupported</otherVersions>
+		</firmware>
+	</compatibility>
+	<dependencies>
+		<package>com.BA7DR.Choicyarabic</package>
+	</dependencies>
+	<shortDescription></shortDescription>
+	<descriptionlist>
+		<description>re formatted correct</description>
+    <description>ios12.0-ios14.4</description>
+	</descriptionlist>
+	<screenshots></screenshots>
+	<changelog>
+		<change>Initial release</change>
+	</changelog>
+	<links></links>
+</package>
+
+<package>
+	<id>com.BADR.dyadic_2.1.4_iphoneos-arm.deb</id>
+	<name>Dyadic</name>
+	<version>2.1.4</version>
+	<compatibility>
+		<firmware>
+			<miniOS>12.0</miniOS>
+			<maxiOS>14.4</maxiOS>
+			<otherVersions>unsupported</otherVersions>
+		</firmware>
+	</compatibility>
+	<dependencies>
+		<package>com.BADR.dyadic</package>
+	</dependencies>
+	<shortDescription></shortDescription>
+	<descriptionlist>
+		<description>re formatted correct</description>
+    <description>ios12.0-ios14.4</description>
+	</descriptionlist>
+	<screenshots></screenshots>
+	<changelog>
+		<change>Initial release</change>
+	</changelog>
+	<links></links>
+</package>
+
+<package>
+	<id>com.BADR.grupi_2.1_iphoneos-arm.deb</id>
+	<name>Grupi</name>
+	<version>2.1</version>
+	<compatibility>
+		<firmware>
+			<miniOS>12.0</miniOS>
+			<maxiOS>14.4</maxiOS>
+			<otherVersions>unsupported</otherVersions>
+		</firmware>
+	</compatibility>
+	<dependencies>
+		<package>com.BADR.grupi</package>
+	</dependencies>
+	<shortDescription></shortDescription>
+	<descriptionlist>
+		<description>re formatted correct</description>
+    <description>ios12.0-ios14.4</description>
+	</descriptionlist>
+	<screenshots></screenshots>
+	<changelog>
+		<change>Initial release</change>
+	</changelog>
+	<links></links>
+</package>
+
+<package>
+	<id>com.BADR.hidejb_2.1.1_iphoneos-arm.deb</id>
+	<name>HideJB</name>
+	<version>2.1.1</version>
+	<compatibility>
+		<firmware>
+			<miniOS>12.0</miniOS>
+			<maxiOS>14.4</maxiOS>
+			<otherVersions>unsupported</otherVersions>
+		</firmware>
+	</compatibility>
+	<dependencies>
+		<package>com.BADR.hidejb</package>
+	</dependencies>
+	<shortDescription></shortDescription>
+	<descriptionlist>
+		<description>re formatted correct</description>
+    <description>ios12.0-ios14.4</description>
+	</descriptionlist>
+	<screenshots></screenshots>
+	<changelog>
+		<change>Initial release</change>
+	</changelog>
+	<links></links>
+</package>
+
+<package>
+	<id>com.BADR.lastlook_3.3.1_iphoneos-arm.deb</id>
+	<name>LastLook</name>
+	<version>3.3.1</version>
+	<compatibility>
+		<firmware>
+			<miniOS>12.0</miniOS>
+			<maxiOS>14.4</maxiOS>
+			<otherVersions>unsupported</otherVersions>
+		</firmware>
+	</compatibility>
+	<dependencies>
+		<package>com.BADR.lastlook</package>
+	</dependencies>
+	<shortDescription></shortDescription>
+	<descriptionlist>
+		<description>re formatted correct</description>
+    <description>ios12.0-ios14.4</description>
+	</descriptionlist>
+	<screenshots></screenshots>
+	<changelog>
+		<change>Initial release</change>
+	</changelog>
+	<links></links>
+</package>
+
+<package>
+	<id>com.BADR.snowboard_1.4.20~Beta4_iphoneos-arm.deb</id>
+	<name>SnowBoard</name>
+	<version>1.4.20~Beta4</version>
+	<compatibility>
+		<firmware>
+			<miniOS>12.0</miniOS>
+			<maxiOS>14.4</maxiOS>
+			<otherVersions>unsupported</otherVersions>
+		</firmware>
+	</compatibility>
+	<dependencies>
+		<package>com.BADR.snowboard</package>
+	</dependencies>
+	<shortDescription></shortDescription>
+	<descriptionlist>
+		<description>re formatted correct</description>
+    <description>ios12.0-ios14.4</description>
+	</descriptionlist>
+	<screenshots></screenshots>
+	<changelog>
+		<change>Initial release</change>
+	</changelog>
+	<links></links>
+</package>
+
+<package>
+	<id>com.BADR.uyou_2.1_iphoneos-arm.deb</id>
+	<name>uYou</name>
+	<version>2.1</version>
+	<compatibility>
+		<firmware>
+			<miniOS>12.0</miniOS>
+			<maxiOS>14.4</maxiOS>
+			<otherVersions>unsupported</otherVersions>
+		</firmware>
+	</compatibility>
+	<dependencies>
+		<package>com.BADR.uyou</package>
+	</dependencies>
+	<shortDescription></shortDescription>
+	<descriptionlist>
+		<description>re formatted correct</description>
+    <description>ios12.0-ios14.4</description>
+	</descriptionlist>
+	<screenshots></screenshots>
+	<changelog>
+		<change>Initial release</change>
+	</changelog>
+	<links></links>
+</package>
+
+<package>
+	<id>com.BADR.youtubepatcher_0.3_iphoneos-arm.deb</id>
+	<name>YouTubePatcher</name>
+	<version>0.3</version>
+	<compatibility>
+		<firmware>
+			<miniOS>12.0</miniOS>
+			<maxiOS>14.4</maxiOS>
+			<otherVersions>unsupported</otherVersions>
+		</firmware>
+	</compatibility>
+	<dependencies>
+		<package>com.BADR.youtubepatcher</package>
+	</dependencies>
+	<shortDescription></shortDescription>
+	<descriptionlist>
+		<description>re formatted correct</description>
+    <description>ios12.0-ios14.4</description>
+	</descriptionlist>
+	<screenshots></screenshots>
+	<changelog>
+		<change>Initial release</change>
+	</changelog>
+	<links></links>
+</package>
+
+<package>
+	<id>com.BADR.ct_2.0_iphoneos-arm.deb</id>
+	<name>CPUTool</name>
+	<version>2.0</version>
+	<compatibility>
+		<firmware>
+			<miniOS>12.0</miniOS>
+			<maxiOS>14.4</maxiOS>
+			<otherVersions>unsupported</otherVersions>
+		</firmware>
+	</compatibility>
+	<dependencies>
+		<package>com.BADR.ct</package>
+	</dependencies>
+	<shortDescription></shortDescription>
+	<descriptionlist>
+		<description>re formatted correct</description>
+    <description>ios12.0-ios14.4</description>
+	</descriptionlist>
+	<screenshots></screenshots>
+	<changelog>
+		<change>Initial release</change>
+	</changelog>
+	<links></links>
+</package>
+
+<package>
+	<id>com.BADR.GameGem_1.5_iphoneos-arm.deb</id>
+	<name>GameGem(iOS11-iOS13)</name>
+	<version>1.5</version>
+	<compatibility>
+		<firmware>
+			<miniOS>12.0</miniOS>
+			<maxiOS>14.4</maxiOS>
+			<otherVersions>unsupported</otherVersions>
+		</firmware>
+	</compatibility>
+	<dependencies>
+		<package>com.BADR.GameGem</package>
+	</dependencies>
+	<shortDescription></shortDescription>
+	<descriptionlist>
+		<description>re formatted correct</description>
+    <description>ios12.0-ios14.4</description>
+	</descriptionlist>
+	<screenshots></screenshots>
+	<changelog>
+		<change>Initial release</change>
+	</changelog>
+	<links></links>
+</package>
+
+<package>
+	<id>com.BADR.shadowBundle_1.3.11_iphoneos-arm.deb</id>
+	<name>Shadow 13 & 14</name>
+	<version>1.3.11</version>
+	<compatibility>
+		<firmware>
+			<miniOS>12.0</miniOS>
+			<maxiOS>14.4</maxiOS>
+			<otherVersions>unsupported</otherVersions>
+		</firmware>
+	</compatibility>
+	<dependencies>
+		<package>com.BADR.shadowBundle</package>
+	</dependencies>
+	<shortDescription></shortDescription>
+	<descriptionlist>
+		<description>re formatted correct</description>
+    <description>ios12.0-ios14.4</description>
+	</descriptionlist>
+	<screenshots></screenshots>
+	<changelog>
+		<change>Initial release</change>
+	</changelog>
+	<links></links>
+</package>
+
+<package>
+	<id>com.BADR.ncontrol_1.9.6-4_iphoneos-arm.deb</id>
+	<name>nControl</name>
+	<version>1.9.6-4</version>
+	<compatibility>
+		<firmware>
+			<miniOS>12.0</miniOS>
+			<maxiOS>14.8</maxiOS>
+			<otherVersions>unsupported</otherVersions>
+		</firmware>
+	</compatibility>
+	<dependencies>
+		<package>com.BADR.ncontrol</package>
+	</dependencies>
+	<shortDescription></shortDescription>
+	<descriptionlist>
+		<description>re formatted correct</description>
+    <description>ios12.0-ios14.8</description>
+	</descriptionlist>
+	<screenshots></screenshots>
+	<changelog>
+		<change>Initial release</change>
+	</changelog>
+	<links></links>
+</package>
+
+<package>
+	<id>com.BADR.pubc_1.8.2-22_iphoneos-arm.deb</id>
+	<name>pubc</name>
+	<version>1.8.2-22</version>
+	<compatibility>
+		<firmware>
+			<miniOS>12.0</miniOS>
+			<maxiOS>14.4</maxiOS>
+			<otherVersions>unsupported</otherVersions>
+		</firmware>
+	</compatibility>
+	<dependencies>
+		<package>com.BADR.pubc</package>
+	</dependencies>
+	<shortDescription></shortDescription>
+	<descriptionlist>
+		<description>re formatted correct</description>
+    <description>ios12.0-ios14.4</description>
+	</descriptionlist>
+	<screenshots></screenshots>
+	<changelog>
+		<change>Initial release</change>
+	</changelog>
+	<links></links>
+</package>
+
+<package>
+	<id>com.BA7DR.sileoarabic_1.3_iphoneos-arm.deb</id>
+	<name>Sileo(تعريب)</name>
+	<version>1.3</version>
+	<compatibility>
+		<firmware>
+			<miniOS>12.0</miniOS>
+			<maxiOS>14.8</maxiOS>
+			<otherVersions>unsupported</otherVersions>
+		</firmware>
+	</compatibility>
+	<dependencies>
+		<package>com.BA7DR.sileoarabic</package>
+	</dependencies>
+	<shortDescription></shortDescription>
+	<descriptionlist>
+		<description>re formatted correct</description>
+    <description>ios12.0-ios14.8</description>
+	</descriptionlist>
+	<screenshots></screenshots>
+	<changelog>
+		<change>Initial release</change>
+	</changelog>
+	<links></links>
+</package>
+
+<package>
+	<id>com.BADR.shortmoji2_1.1.6_iphoneos-arm.deb</id>
+	<name>Shortmoji2</name>
+	<version>1.1.6</version>
+	<compatibility>
+		<firmware>
+			<miniOS>12.0</miniOS>
+			<maxiOS>14.4</maxiOS>
+			<otherVersions>unsupported</otherVersions>
+		</firmware>
+	</compatibility>
+	<dependencies>
+		<package>com.BADR.shortmoji2</package>
+	</dependencies>
+	<shortDescription></shortDescription>
+	<descriptionlist>
+		<description>re formatted correct</description>
+    <description>ios12.0-ios14.4</description>
+	</descriptionlist>
+	<screenshots></screenshots>
+	<changelog>
+		<change>Initial release</change>
+	</changelog>
+	<links></links>
+</package>
+
+<package>
+	<id>com.BADR.complications_4.0_iphoneos-arm.deb</id>
+	<name>Complications</name>
+	<version>4.0</version>
+	<compatibility>
+		<firmware>
+			<miniOS>12.0</miniOS>
+			<maxiOS>14.4</maxiOS>
+			<otherVersions>unsupported</otherVersions>
+		</firmware>
+	</compatibility>
+	<dependencies>
+		<package>com.BADR.complications</package>
+	</dependencies>
+	<shortDescription></shortDescription>
+	<descriptionlist>
+		<description>re formatted correct</description>
+    <description>ios12.0-ios14.4</description>
+	</descriptionlist>
+	<screenshots></screenshots>
+	<changelog>
+		<change>Initial release</change>
+	</changelog>
+	<links></links>
+</package>
+
+<package>
+	<id>com.BADR.keyboardcolor_2.0-6_iphoneos-arm.deb</id>
+	<name>Keyboard Color</name>
+	<version>2.0-6</version>
+	<compatibility>
+		<firmware>
+			<miniOS>12.0</miniOS>
+			<maxiOS>14.4</maxiOS>
+			<otherVersions>unsupported</otherVersions>
+		</firmware>
+	</compatibility>
+	<dependencies>
+		<package>com.BADR.keyboardcolor</package>
+	</dependencies>
+	<shortDescription></shortDescription>
+	<descriptionlist>
+		<description>re formatted correct</description>
+    <description>ios12.0-ios14.4</description>
+	</descriptionlist>
+	<screenshots></screenshots>
+	<changelog>
+		<change>Initial release</change>
+	</changelog>
+	<links></links>
+</package>
+
+<package>
+	<id>com.BADR.ringertoggle_0.1-2_iphoneos-arm.deb</id>
+	<name>RingerToggle (CCSupport)</name>
+	<version>0.1-2</version>
+	<compatibility>
+		<firmware>
+			<miniOS>12.0</miniOS>
+			<maxiOS>14.4</maxiOS>
+			<otherVersions>unsupported</otherVersions>
+		</firmware>
+	</compatibility>
+	<dependencies>
+		<package>com.BADR.ringertoggle</package>
+	</dependencies>
+	<shortDescription></shortDescription>
+	<descriptionlist>
+		<description>re formatted correct</description>
+    <description>ios12.0-ios14.4</description>
+	</descriptionlist>
+	<screenshots></screenshots>
+	<changelog>
+		<change>Initial release</change>
+	</changelog>
+	<links></links>
+</package>
+
+<package>
+	<id>com.BADR.smarterlpm_1.0.9_iphoneos-arm.deb</id>
+	<name>SmarterLPM</name>
+	<version>1.0.9</version>
+	<compatibility>
+		<firmware>
+			<miniOS>12.0</miniOS>
+			<maxiOS>14.4</maxiOS>
+			<otherVersions>unsupported</otherVersions>
+		</firmware>
+	</compatibility>
+	<dependencies>
+		<package>com.BADR.smarterlpm</package>
+	</dependencies>
+	<shortDescription></shortDescription>
+	<descriptionlist>
+		<description>re formatted correct</description>
+    <description>ios12.0-ios14.4</description>
+	</descriptionlist>
+	<screenshots></screenshots>
+	<changelog>
+		<change>Initial release</change>
+	</changelog>
+	<links></links>
+</package>
+
+<package>
+	<id>com.BADR.yswitchtheme_2.0_iphoneos-arm.deb</id>
+	<name>Y-Switch.Theme</name>
+	<version>2.0</version>
+	<compatibility>
+		<firmware>
+			<miniOS>12.0</miniOS>
+			<maxiOS>14.4</maxiOS>
+			<otherVersions>unsupported</otherVersions>
+		</firmware>
+	</compatibility>
+	<dependencies>
+		<package>com.BADR.yswitchtheme</package>
+	</dependencies>
+	<shortDescription></shortDescription>
+	<descriptionlist>
+		<description>re formatted correct</description>
+    <description>ios12.0-ios14.4</description>
+	</descriptionlist>
+	<screenshots></screenshots>
+	<changelog>
+		<change>Initial release</change>
+	</changelog>
+	<links></links>
+</package>
+
+<package>
+	<id>com.BADR.unicorn_5.3_iphoneos-arm.deb</id>
+	<name>Unicorn</name>
+	<version>5.3</version>
+	<compatibility>
+		<firmware>
+			<miniOS>12.0</miniOS>
+			<maxiOS>14.4</maxiOS>
+			<otherVersions>unsupported</otherVersions>
+		</firmware>
+	</compatibility>
+	<dependencies>
+		<package>com.BADR.unicorn</package>
+	</dependencies>
+	<shortDescription></shortDescription>
+	<descriptionlist>
+		<description>re formatted correct</description>
+    <description>ios12.0-ios14.4</description>
+	</descriptionlist>
+	<screenshots></screenshots>
+	<changelog>
+		<change>Initial release</change>
+	</changelog>
+	<links></links>
+</package>
+
+<package>
+	<id>com.BADR.wonderbar_1.1_iphoneos-arm.deb</id>
+	<name>Wonderbar</name>
+	<version>1.1</version>
+	<compatibility>
+		<firmware>
+			<miniOS>12.0</miniOS>
+			<maxiOS>14.4</maxiOS>
+			<otherVersions>unsupported</otherVersions>
+		</firmware>
+	</compatibility>
+	<dependencies>
+		<package>com.BADR.wonderbar</package>
+	</dependencies>
+	<shortDescription></shortDescription>
+	<descriptionlist>
+		<description>re formatted correct</description>
+    <description>ios12.0-ios14.4</description>
+	</descriptionlist>
+	<screenshots></screenshots>
+	<changelog>
+		<change>Initial release</change>
+	</changelog>
+	<links></links>
+</package>
+
+<package>
+	<id>com.BADR.snapper2_2.5.12_iphoneos-arm.deb</id>
+	<name>Snapper 2</name>
+	<version>2.5.12</version>
+	<compatibility>
+		<firmware>
+			<miniOS>12.0</miniOS>
+			<maxiOS>14.4</maxiOS>
+			<otherVersions>unsupported</otherVersions>
+		</firmware>
+	</compatibility>
+	<dependencies>
+		<package>com.BADR.snapper2</package>
+	</dependencies>
+	<shortDescription></shortDescription>
+	<descriptionlist>
+		<description>re formatted correct</description>
+    <description>ios12.0-ios14.4</description>
+	</descriptionlist>
+	<screenshots></screenshots>
+	<changelog>
+		<change>Initial release</change>
+	</changelog>
+	<links></links>
+</package>
+
+<package>
+	<id>com.BADR.ninstalled_1.0_iphoneos-arm.deb</id>
+	<name>#Installed</name>
+	<version>1.0</version>
+	<compatibility>
+		<firmware>
+			<miniOS>12.0</miniOS>
+			<maxiOS>14.4</maxiOS>
+			<otherVersions>unsupported</otherVersions>
+		</firmware>
+	</compatibility>
+	<dependencies>
+		<package>com.BADR.ninstalled</package>
+	</dependencies>
+	<shortDescription></shortDescription>
+	<descriptionlist>
+		<description>re formatted correct</description>
+    <description>ios12.0-ios14.4</description>
+	</descriptionlist>
+	<screenshots></screenshots>
+	<changelog>
+		<change>Initial release</change>
+	</changelog>
+	<links></links>
+</package>
+
+<package>
+	<id>com.BADR.fix_1.0_iphoneos-arm.deb</id>
+	<name>Package Remover</name>
+	<version>1.0</version>
+	<compatibility>
+		<firmware>
+			<miniOS>12.0</miniOS>
+			<maxiOS>14.4</maxiOS>
+			<otherVersions>unsupported</otherVersions>
+		</firmware>
+	</compatibility>
+	<dependencies>
+		<package>com.BADR.fix</package>
+	</dependencies>
+	<shortDescription></shortDescription>
+	<descriptionlist>
+		<description>re formatted correct</description>
+    <description>ios12.0-ios14.4</description>
+	</descriptionlist>
+	<screenshots></screenshots>
+	<changelog>
+		<change>Initial release</change>
+	</changelog>
+	<links></links>
+</package>
+
+<package>
+	<id>com.BADR.activator_1.9.13_iphoneos-arm.deb</id>
+	<name>Activator</name>
+	<version>1.9.13</version>
+	<compatibility>
+		<firmware>
+			<miniOS>12.0</miniOS>
+			<maxiOS>14.4</maxiOS>
+			<otherVersions>unsupported</otherVersions>
+		</firmware>
+	</compatibility>
+	<dependencies>
+		<package>com.BADR.activator</package>
+	</dependencies>
+	<shortDescription></shortDescription>
+	<descriptionlist>
+		<description>re formatted correct</description>
+    <description>ios12.0-ios14.4</description>
+	</descriptionlist>
+	<screenshots></screenshots>
+	<changelog>
+		<change>Initial release</change>
+	</changelog>
+	<links></links>
+</package>
+
+<package>
+	<id>com.BADR.kernbypass_0.0.3_iphoneos-arm.deb</id>
+	<name>KernBypass</name>
+	<version>0.0.3</version>
+	<compatibility>
+		<firmware>
+			<miniOS>12.0</miniOS>
+			<maxiOS>14.4</maxiOS>
+			<otherVersions>unsupported</otherVersions>
+		</firmware>
+	</compatibility>
+	<dependencies>
+		<package>com.BADR.kernbypass</package>
+	</dependencies>
+	<shortDescription></shortDescription>
+	<descriptionlist>
+		<description>re formatted correct</description>
+    <description>ios12.0-ios14.4</description>
+	</descriptionlist>
+	<screenshots></screenshots>
+	<changelog>
+		<change>Initial release</change>
+	</changelog>
+	<links></links>
+</package>
+
+<package>
+	<id>com.BADR.swipeselection_1.0~beta9_iphoneos-arm.deb</id>
+	<name>SwipeSelection</name>
+	<version>1.0~beta9</version>
+	<compatibility>
+		<firmware>
+			<miniOS>12.0</miniOS>
+			<maxiOS>14.4</maxiOS>
+			<otherVersions>unsupported</otherVersions>
+		</firmware>
+	</compatibility>
+	<dependencies>
+		<package>com.BADR.swipeselection</package>
+	</dependencies>
+	<shortDescription></shortDescription>
+	<descriptionlist>
+		<description>re formatted correct</description>
+    <description>ios12.0-ios14.4</description>
+	</descriptionlist>
+	<screenshots></screenshots>
+	<changelog>
+		<change>Initial release</change>
+	</changelog>
+	<links></links>
+</package>
+
+<package>
+	<id>lunotech11.Legizmo.Kincaid_4.0_iphoneos-arm.deb</id>
+	<name>Legizmo.Kincaid</name>
+	<version>4.0</version>
+	<compatibility>
+		<firmware>
+			<miniOS>12.0</miniOS>
+			<maxiOS>14.8</maxiOS>
+			<otherVersions>unsupported</otherVersions>
+		</firmware>
+	</compatibility>
+	<dependencies>
+		<package>lunotech11.Legizmo.Kincaid</package>
+	</dependencies>
+	<shortDescription></shortDescription>
+	<descriptionlist>
+		<description>re formatted correct</description>
+    <description>ios12.0-ios14.8</description>
+	</descriptionlist>
+	<screenshots></screenshots>
+	<changelog>
+		<change>Initial release</change>
+	</changelog>
+	<links></links>
+</package>
+
+<package>
+	<id>com.BADR.orion_1.2_iphoneos-arm.deb</id>
+	<name>Orion</name>
+	<version>1.2</version>
+	<compatibility>
+		<firmware>
+			<miniOS>12.0</miniOS>
+			<maxiOS>14.8</maxiOS>
+			<otherVersions>unsupported</otherVersions>
+		</firmware>
+	</compatibility>
+	<dependencies>
+		<package>com.BADR.orion</package>
+	</dependencies>
+	<shortDescription></shortDescription>
+	<descriptionlist>
+		<description>re formatted correct</description>
+    <description>ios12.0-ios14.8</description>
+	</descriptionlist>
+	<screenshots></screenshots>
+	<changelog>
+		<change>Initial release</change>
+	</changelog>
+	<links></links>
+</package>
+
+<package>
+	<id>com.BADR.fancyselection_1.5_iphoneos-arm.deb</id>
+	<name>FancySelection</name>
+	<version>1.5</version>
+	<compatibility>
+		<firmware>
+			<miniOS>12.0</miniOS>
+			<maxiOS>14.4</maxiOS>
+			<otherVersions>unsupported</otherVersions>
+		</firmware>
+	</compatibility>
+	<dependencies>
+		<package>com.BADR.fancyselection</package>
+	</dependencies>
+	<shortDescription></shortDescription>
+	<descriptionlist>
+		<description>re formatted correct</description>
+    <description>ios12.0-ios14.4</description>
+	</descriptionlist>
+	<screenshots></screenshots>
+	<changelog>
+		<change>Initial release</change>
+	</changelog>
+	<links></links>
+</package>
+
+<package>
+	<id>com.BA7DR.fancyselectionarabic_1.5_iphoneos-arm.deb</id>
+	<name>FancySelection(تعريب)</name>
+	<version>1.5</version>
+	<compatibility>
+		<firmware>
+			<miniOS>12.0</miniOS>
+			<maxiOS>14.4</maxiOS>
+			<otherVersions>unsupported</otherVersions>
+		</firmware>
+	</compatibility>
+	<dependencies>
+		<package>com.BA7DR.fancyselectionarabic</package>
+	</dependencies>
+	<shortDescription></shortDescription>
+	<descriptionlist>
+		<description>re formatted correct</description>
+    <description>ios12.0-ios14.4</description>
+	</descriptionlist>
+	<screenshots></screenshots>
+	<changelog>
+		<change>Initial release</change>
+	</changelog>
+	<links></links>
+</package>
+
+<package>
+	<id>com.BADR.watusi3_1.1.11_iphoneos-arm.deb</id>
+	<name>Watusi 3 for WhatsApp</name>
+	<version>1.1.11</version>
+	<compatibility>
+		<firmware>
+			<miniOS>12.0</miniOS>
+			<maxiOS>14.8</maxiOS>
+			<otherVersions>unsupported</otherVersions>
+		</firmware>
+	</compatibility>
+	<dependencies>
+		<package>com.BADR.watusi3</package>
+	</dependencies>
+	<shortDescription></shortDescription>
+	<descriptionlist>
+		<description>re formatted correct</description>
+    <description>ios12.0-ios14.8</description>
+	</descriptionlist>
+	<screenshots></screenshots>
+	<changelog>
+		<change>Initial release</change>
+	</changelog>
+	<links></links>
+</package>
+
+<package>
+	<id>com.BADR.onlinenotify_3.3.8_iphoneos-arm.deb</id>
+	<name>OnlineNotify</name>
+	<version>3.3.8</version>
+	<compatibility>
+		<firmware>
+			<miniOS>12.0</miniOS>
+			<maxiOS>14.8</maxiOS>
+			<otherVersions>unsupported</otherVersions>
+		</firmware>
+	</compatibility>
+	<dependencies>
+		<package>com.BADR.onlinenotify</package>
+	</dependencies>
+	<shortDescription></shortDescription>
+	<descriptionlist>
+		<description>re formatted correct</description>
+    <description>ios12.0-ios14.8</description>
+	</descriptionlist>
+	<screenshots></screenshots>
+	<changelog>
+		<change>Initial release</change>
+	</changelog>
+	<links></links>
+</package>
+
+<package>
+	<id>com.BADR.BHTwitter_2.9_iphoneos-arm.deb</id>
+	<name>BHTwitter</name>
+	<version>2.9</version>
+	<compatibility>
+		<firmware>
+			<miniOS>12.0</miniOS>
+			<maxiOS>14.8</maxiOS>
+			<otherVersions>unsupported</otherVersions>
+		</firmware>
+	</compatibility>
+	<dependencies>
+		<package>com.BADR.BHTwitter</package>
+	</dependencies>
+	<shortDescription></shortDescription>
+	<descriptionlist>
+		<description>re formatted correct</description>
+    <description>ios12.0-ios14.8</description>
+	</descriptionlist>
+	<screenshots></screenshots>
+	<changelog>
+		<change>Initial release</change>
+	</changelog>
+	<links></links>
+</package>
+
+<package>
+	<id>com.BADR.sbypass_2.0.2_iphoneos-arm.deb</id>
+	<name>S-Bypass</name>
+	<version>2.0.2</version>
+	<compatibility>
+		<firmware>
+			<miniOS>12.0</miniOS>
+			<maxiOS>14.4</maxiOS>
+			<otherVersions>unsupported</otherVersions>
+		</firmware>
+	</compatibility>
+	<dependencies>
+		<package>com.BADR.sbypass</package>
+	</dependencies>
+	<shortDescription></shortDescription>
+	<descriptionlist>
+		<description>re formatted correct</description>
+    <description>ios12.0-ios14.4</description>
+	</descriptionlist>
+	<screenshots></screenshots>
+	<changelog>
+		<change>Initial release</change>
+	</changelog>
+	<links></links>
+</package>
+
+<package>
+	<id>com.BA7DR.translationarabic_1.5.0_iphoneos-arm</id>
+	<name>Translation(تعريب)</name>
+	<version>1.5.0</version>
+	<compatibility>
+		<firmware>
+			<miniOS>12.0</miniOS>
+			<maxiOS>14.4</maxiOS>
+			<otherVersions>unsupported</otherVersions>
+		</firmware>
+	</compatibility>
+	<dependencies>
+		<package>com.BA7DR.translationarabic</package>
+	</dependencies>
+	<shortDescription></shortDescription>
+	<descriptionlist>
+		<description>re formatted correct</description>
+    <description>ios12.0-ios14.4</description>
+	</descriptionlist>
+	<screenshots></screenshots>
+	<changelog>
+		<change>Initial release</change>
+	</changelog>
+	<links></links>
+</package>
+
+<package>
+	<id>com.BA7DR.Lynxarabic_2.3_iphoneos-arm</id>
+	<name>Lynx(تعريب)</name>
+	<version>2.3</version>
+	<compatibility>
+		<firmware>
+			<miniOS>12.0</miniOS>
+			<maxiOS>14.4</maxiOS>
+			<otherVersions>unsupported</otherVersions>
+		</firmware>
+	</compatibility>
+	<dependencies>
+		<package>com.BA7DR.Lynxarabic</package>
+	</dependencies>
+	<shortDescription></shortDescription>
+	<descriptionlist>
+		<description>re formatted correct</description>
+    <description>ios12.0-ios14.4</description>
+	</descriptionlist>
+	<screenshots></screenshots>
+	<changelog>
+		<change>Initial release</change>
+	</changelog>
+	<links></links>
+</package>
+
+<package>
+	<id>com.BADR.translation_1.5.0_iphoneos-arm.deb</id>
+	<name>Translation</name>
+	<version>1.5.0</version>
+	<compatibility>
+		<firmware>
+			<miniOS>12.0</miniOS>
+			<maxiOS>14.4</maxiOS>
+			<otherVersions>unsupported</otherVersions>
+		</firmware>
+	</compatibility>
+	<dependencies>
+		<package>com.BADR.translation</package>
+	</dependencies>
+	<shortDescription></shortDescription>
+	<descriptionlist>
+		<description>re formatted correct</description>
+    <description>ios12.0-ios14.4</description>
+	</descriptionlist>
+	<screenshots></screenshots>
+	<changelog>
+		<change>Initial release</change>
+	</changelog>
+	<links></links>
+</package>
+
+<package>
+	<id>com.BADR.tiktokgod_2.1.0_iphoneos-arm.deb</id>
+	<name>TikTokGod</name>
+	<version>2.1.0</version>
+	<compatibility>
+		<firmware>
+			<miniOS>12.0</miniOS>
+			<maxiOS>14.4</maxiOS>
+			<otherVersions>unsupported</otherVersions>
+		</firmware>
+	</compatibility>
+	<dependencies>
+		<package>com.BADR.tiktokgod</package>
+	</dependencies>
+	<shortDescription></shortDescription>
+	<descriptionlist>
+		<description>re formatted correct</description>
+    <description>ios12.0-ios14.4</description>
+	</descriptionlist>
+	<screenshots></screenshots>
+	<changelog>
+		<change>Initial release</change>
+	</changelog>
+	<links></links>
+</package>
+
+<package>
+	<id>com.BADR.perfectcalc_1.0_iphoneos-arm.deb</id>
+	<name>PerfectCalc</name>
+	<version>1.0</version>
+	<compatibility>
+		<firmware>
+			<miniOS>12.0</miniOS>
+			<maxiOS>14.4</maxiOS>
+			<otherVersions>unsupported</otherVersions>
+		</firmware>
+	</compatibility>
+	<dependencies>
+		<package>com.BADR.perfectcalc</package>
+	</dependencies>
+	<shortDescription></shortDescription>
+	<descriptionlist>
+		<description>re formatted correct</description>
+    <description>ios12.0-ios14.4</description>
+	</descriptionlist>
+	<screenshots></screenshots>
+	<changelog>
+		<change>Initial release</change>
+	</changelog>
+	<links></links>
+</package>
+
+<package>
+	<id>com.BADR.DarkApp_8.7-3_iphoneos-arm.deb</id>
+	<name>DarkApp</name>
+	<version>8.7-3</version>
+	<compatibility>
+		<firmware>
+			<miniOS>12.0</miniOS>
+			<maxiOS>14.4</maxiOS>
+			<otherVersions>unsupported</otherVersions>
+		</firmware>
+	</compatibility>
+	<dependencies>
+		<package>com.BADR.DarkApp</package>
+	</dependencies>
+	<shortDescription></shortDescription>
+	<descriptionlist>
+		<description>re formatted correct</description>
+    <description>ios12.0-ios14.4</description>
+	</descriptionlist>
+	<screenshots></screenshots>
+	<changelog>
+		<change>Initial release</change>
+	</changelog>
+	<links></links>
+</package>
+
+<package>
+	<id>com.BADR.arabhack_5.0.1_iphoneos-arm.deb</id>
+	<name>Arab Hack</name>
+	<version>5.0.1</version>
+	<compatibility>
+		<firmware>
+			<miniOS>12.0</miniOS>
+			<maxiOS>14.4</maxiOS>
+			<otherVersions>unsupported</otherVersions>
+		</firmware>
+	</compatibility>
+	<dependencies>
+		<package>com.BADR.arabhack</package>
+	</dependencies>
+	<shortDescription></shortDescription>
+	<descriptionlist>
+		<description>re formatted correct</description>
+    <description>ios12.0-ios14.4</description>
+	</descriptionlist>
+	<screenshots></screenshots>
+	<changelog>
+		<change>Initial release</change>
+	</changelog>
+	<links></links>
+</package>
+
+<package>
+	<id>com.BADR.apphack_4.5-3_iphoneos-arm.deb</id>
+	<name>Apps Hacks</name>
+	<version>4.5-3</version>
+	<compatibility>
+		<firmware>
+			<miniOS>12.0</miniOS>
+			<maxiOS>14.4</maxiOS>
+			<otherVersions>unsupported</otherVersions>
+		</firmware>
+	</compatibility>
+	<dependencies>
+		<package>com.BADR.apphack</package>
+	</dependencies>
+	<shortDescription></shortDescription>
+	<descriptionlist>
+		<description>re formatted correct</description>
+    <description>ios12.0-ios14.4</description>
+	</descriptionlist>
+	<screenshots></screenshots>
+	<changelog>
+		<change>Initial release</change>
+	</changelog>
+	<links></links>
+</package>
+
+<package>
+	<id>com.BADR.hestia_1.4_iphoneos-arm.deb</id>
+	<name>Hestia</name>
+	<version>1.4</version>
+	<compatibility>
+		<firmware>
+			<miniOS>12.0</miniOS>
+			<maxiOS>14.4</maxiOS>
+			<otherVersions>unsupported</otherVersions>
+		</firmware>
+	</compatibility>
+	<dependencies>
+		<package>com.BADR.hestia</package>
+	</dependencies>
+	<shortDescription></shortDescription>
+	<descriptionlist>
+		<description>re formatted correct</description>
+    <description>ios12.0-ios14.4</description>
+	</descriptionlist>
+	<screenshots></screenshots>
+	<changelog>
+		<change>Initial release</change>
+	</changelog>
+	<links></links>
+</package>
+
+<package>
+	<id>com.BADR.lynx-2_2.3_iphoneos-arm</id>
+	<name>Lynx</name>
+	<version>2_2.3</version>
+	<compatibility>
+		<firmware>
+			<miniOS>12.0</miniOS>
+			<maxiOS>14.4</maxiOS>
+			<otherVersions>unsupported</otherVersions>
+		</firmware>
+	</compatibility>
+	<dependencies>
+		<package>com.BADR.lynx</package>
+	</dependencies>
+	<shortDescription></shortDescription>
+	<descriptionlist>
+		<description>re formatted correct</description>
+    <description>ios12.0-ios14.4</description>
+	</descriptionlist>
+	<screenshots></screenshots>
+	<changelog>
+		<change>Initial release</change>
+	</changelog>
+	<links></links>
+</package>
+
+<package>
+	<id>com.BADR.genshinjailbreakbypass_1.0_iphoneos-arm.deb</id>
+	<name>Genshin Jailbreak Bypass</name>
+	<version>1.0</version>
+	<compatibility>
+		<firmware>
+			<miniOS>12.0</miniOS>
+			<maxiOS>14.4</maxiOS>
+			<otherVersions>unsupported</otherVersions>
+		</firmware>
+	</compatibility>
+	<dependencies>
+		<package>com.BADR.genshinjailbreakbypass</package>
+	</dependencies>
+	<shortDescription></shortDescription>
+	<descriptionlist>
+		<description>re formatted correct</description>
+    <description>ios12.0-ios14.4</description>
+	</descriptionlist>
+	<screenshots></screenshots>
+	<changelog>
+		<change>Initial release</change>
+	</changelog>
+	<links></links>
+</package>
+
+<package>
+	<id>com.BADR.addtofolder_1.3_iphoneos-arm.deb</id>
+	<name>AddTofolder</name>
+	<version>1.3</version>
+	<compatibility>
+		<firmware>
+			<miniOS>12.0</miniOS>
+			<maxiOS>14.4</maxiOS>
+			<otherVersions>unsupported</otherVersions>
+		</firmware>
+	</compatibility>
+	<dependencies>
+		<package>com.BADR.addtofolder</package>
+	</dependencies>
+	<shortDescription></shortDescription>
+	<descriptionlist>
+		<description>re formatted correct</description>
+    <description>ios12.0-ios14.4</description>
+	</descriptionlist>
+	<screenshots></screenshots>
+	<changelog>
+		<change>Initial release</change>
+	</changelog>
+	<links></links>
+</package>
+
+<package>
+	<id>com.BADR.zenumbra_1.0.7_iphoneos-arm.deb</id>
+	<name>Zenumbra</name>
+	<version>1.0.7</version>
+	<compatibility>
+		<firmware>
+			<miniOS>12.0</miniOS>
+			<maxiOS>14.8</maxiOS>
+			<otherVersions>unsupported</otherVersions>
+		</firmware>
+	</compatibility>
+	<dependencies>
+		<package>com.BADR.zenumbra</package>
+	</dependencies>
+	<shortDescription></shortDescription>
+	<descriptionlist>
+		<description>re formatted correct</description>
+    <description>ios12.0-ios14.8</description>
+	</descriptionlist>
+	<screenshots></screenshots>
+	<changelog>
+		<change>Initial release</change>
+	</changelog>
+	<links></links>
+</package>
+
+<package>
+	<id>com.BADR.tweakrestrictor_1.1_iphoneos-arm.deb</id>
+	<name>TweakRestrictor</name>
+	<version>1.1</version>
+	<compatibility>
+		<firmware>
+			<miniOS>12.0</miniOS>
+			<maxiOS>14.8</maxiOS>
+			<otherVersions>unsupported</otherVersions>
+		</firmware>
+	</compatibility>
+	<dependencies>
+		<package>com.BADR.tweakrestrictor</package>
+	</dependencies>
+	<shortDescription></shortDescription>
+	<descriptionlist>
+		<description>re formatted correct</description>
+    <description>ios12.0-ios14.8</description>
+	</descriptionlist>
+	<screenshots></screenshots>
+	<changelog>
+		<change>Initial release</change>
+	</changelog>
+	<links></links>
+</package>
+
+<package>
+	<id>com.BADR.easyswitcherx_2.0.1_iphoneos-arm.deb</id>
+	<name>EasySwitcherX</name>
+	<version>2.0.1</version>
+	<compatibility>
+		<firmware>
+			<miniOS>12.0</miniOS>
+			<maxiOS>14.8</maxiOS>
+			<otherVersions>unsupported</otherVersions>
+		</firmware>
+	</compatibility>
+	<dependencies>
+		<package>com.BADR.easyswitcherx</package>
+	</dependencies>
+	<shortDescription></shortDescription>
+	<descriptionlist>
+		<description>re formatted correct</description>
+    <description>ios12.0-ios14.8</description>
+	</descriptionlist>
+	<screenshots></screenshots>
+	<changelog>
+		<change>Initial release</change>
+	</changelog>
+	<links></links>
+</package>
+
+<package>
+	<id>com.BADR.cydiaupdates_0.0.1-2_iphoneos-arm.deb</id>
+	<name>CydiaUpdates</name>
+	<version>0.0.1-2</version>
+	<compatibility>
+		<firmware>
+			<miniOS>12.0</miniOS>
+			<maxiOS>14.8</maxiOS>
+			<otherVersions>unsupported</otherVersions>
+		</firmware>
+	</compatibility>
+	<dependencies>
+		<package>com.BADR.cydiaupdates</package>
+	</dependencies>
+	<shortDescription></shortDescription>
+	<descriptionlist>
+		<description>re formatted correct</description>
+    <description>ios12.0-ios14.8</description>
+	</descriptionlist>
+	<screenshots></screenshots>
+	<changelog>
+		<change>Initial release</change>
+	</changelog>
+	<links></links>
+</package>
+
+<package>
+	<id>com.BADR.tinybanners2_1.0.4-3_iphoneos-arm.deb</id>
+	<name>TinyBanners2</name>
+	<version>1.0.4-3</version>
+	<compatibility>
+		<firmware>
+			<miniOS>12.0</miniOS>
+			<maxiOS>14.8</maxiOS>
+			<otherVersions>unsupported</otherVersions>
+		</firmware>
+	</compatibility>
+	<dependencies>
+		<package>com.BADR.tinybanners2</package>
+	</dependencies>
+	<shortDescription></shortDescription>
+	<descriptionlist>
+		<description>re formatted correct</description>
+    <description>ios12.0-ios14.8</description>
+	</descriptionlist>
+	<screenshots></screenshots>
+	<changelog>
+		<change>Initial release</change>
+	</changelog>
+	<links></links>
+</package>
+
+<package>
+	<id>com.BADR.tranzlo_3.5_iphoneos-arm.deb</id>
+	<name>Tranzlo</name>
+	<version>3.5</version>
+	<compatibility>
+		<firmware>
+			<miniOS>12.0</miniOS>
+			<maxiOS>14.8</maxiOS>
+			<otherVersions>unsupported</otherVersions>
+		</firmware>
+	</compatibility>
+	<dependencies>
+		<package>com.BADR.tranzlo</package>
+	</dependencies>
+	<shortDescription></shortDescription>
+	<descriptionlist>
+		<description>re formatted correct</description>
+    <description>ios12.0-ios14.8</description>
+	</descriptionlist>
+	<screenshots></screenshots>
+	<changelog>
+		<change>Initial release</change>
+	</changelog>
+	<links></links>
+</package>
+
+<package>
+	<id>com.BADR.laetus_3.3.1_iphoneos-arm.deb</id>
+	<name>Laetus</name>
+	<version>3.3.1</version>
+	<compatibility>
+		<firmware>
+			<miniOS>12.0</miniOS>
+			<maxiOS>14.8</maxiOS>
+			<otherVersions>unsupported</otherVersions>
+		</firmware>
+	</compatibility>
+	<dependencies>
+		<package>com.BADR.laetus</package>
+	</dependencies>
+	<shortDescription></shortDescription>
+	<descriptionlist>
+		<description>re formatted correct</description>
+    <description>ios12.0-ios14.8</description>
+	</descriptionlist>
+	<screenshots></screenshots>
+	<changelog>
+		<change>Initial release</change>
+	</changelog>
+	<links></links>
+</package>
+
+<package>
+	<id>com.BADR.seeya-pro_1.0.0_iphoneos-arm.deb</id>
+	<name>SeeYa-Pro</name>
+	<version>1.0.0</version>
+	<compatibility>
+		<firmware>
+			<miniOS>12.0</miniOS>
+			<maxiOS>14.8</maxiOS>
+			<otherVersions>unsupported</otherVersions>
+		</firmware>
+	</compatibility>
+	<dependencies>
+		<package>com.BADR.seeya-pro</package>
+	</dependencies>
+	<shortDescription></shortDescription>
+	<descriptionlist>
+		<description>re formatted correct</description>
+    <description>ios12.0-ios14.8</description>
+	</descriptionlist>
+	<screenshots></screenshots>
+	<changelog>
+		<change>Initial release</change>
+	</changelog>
+	<links></links>
+</package>
+
+<package>
+	<id>com.BADR.autobrightness11_0.1-5_iphoneos-arm.deb</id>
+	<name>AutoBrightnessToggle(CCSupport)</name>
+	<version>0.1-5</version>
+	<compatibility>
+		<firmware>
+			<miniOS>12.0</miniOS>
+			<maxiOS>14.8</maxiOS>
+			<otherVersions>unsupported</otherVersions>
+		</firmware>
+	</compatibility>
+	<dependencies>
+		<package>com.BADR.autobrightness11</package>
+	</dependencies>
+	<shortDescription></shortDescription>
+	<descriptionlist>
+		<description>re formatted correct</description>
+    <description>ios12.0-ios14.8</description>
+	</descriptionlist>
+	<screenshots></screenshots>
+	<changelog>
+		<change>Initial release</change>
+	</changelog>
+	<links></links>
+</package>
+
+<package>
+	<id>com.BADR.waqt_1.1_iphoneos-arm.deb</id>
+	<name>Waqt</name>
+	<version>1.1</version>
+	<compatibility>
+		<firmware>
+			<miniOS>12.0</miniOS>
+			<maxiOS>14.8</maxiOS>
+			<otherVersions>unsupported</otherVersions>
+		</firmware>
+	</compatibility>
+	<dependencies>
+		<package>com.BADR.waqt</package>
+	</dependencies>
+	<shortDescription></shortDescription>
+	<descriptionlist>
+		<description>re formatted correct</description>
+    <description>ios12.0-ios14.8</description>
+	</descriptionlist>
+	<screenshots></screenshots>
+	<changelog>
+		<change>Initial release</change>
+	</changelog>
+	<links></links>
+</package>
+
+<package>
+	<id>com.BADR.jodelkarma_1.0_iphoneos-arm.deb</id>
+	<name>Jodel++</name>
+	<version>1.0</version>
+	<compatibility>
+		<firmware>
+			<miniOS>12.0</miniOS>
+			<maxiOS>14.8</maxiOS>
+			<otherVersions>unsupported</otherVersions>
+		</firmware>
+	</compatibility>
+	<dependencies>
+		<package>com.BADR.jodelkarma</package>
+	</dependencies>
+	<shortDescription></shortDescription>
+	<descriptionlist>
+		<description>re formatted correct</description>
+    <description>ios12.0-ios14.8</description>
+	</descriptionlist>
+	<screenshots></screenshots>
+	<changelog>
+		<change>Initial release</change>
+	</changelog>
+	<links></links>
+</package>
+
+<package>
+	<id>com.BADR.safeccmodules_1.5-1_iphoneos-arm.deb</id>
+	<name>CCModules(10.0/14.8)</name>
+	<version>1.5-1</version>
+	<compatibility>
+		<firmware>
+			<miniOS>12.0</miniOS>
+			<maxiOS>14.8</maxiOS>
+			<otherVersions>unsupported</otherVersions>
+		</firmware>
+	</compatibility>
+	<dependencies>
+		<package>com.BADR.safeccmodules</package>
+	</dependencies>
+	<shortDescription></shortDescription>
+	<descriptionlist>
+		<description>re formatted correct</description>
+    <description>ios12.0-ios14.8</description>
+	</descriptionlist>
+	<screenshots></screenshots>
+	<changelog>
+		<change>Initial release</change>
+	</changelog>
+	<links></links>
+</package>
