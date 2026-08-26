@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="referrer" content="strict-origin-when-cross-origin">
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self';img-src 'self' https: data:;style-src 'self';script-src 'self';connect-src 'self';font-src 'self' data:;frame-ancestors 'none';base-uri 'self';form-action 'self';object-src 'none';upgrade-insecure-requests">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self';img-src 'self' https: data:;style-src 'self';script-src 'self';connect-src 'self' https://api.counterapi.dev;frame-ancestors 'none';base-uri 'self';form-action 'self';object-src 'none';upgrade-insecure-requests">
   <meta name="description" content="سورس بدر - تعريب وأدوات وثيمات وخطوط لأجهزة iOS">
   <title>سورس بدر | Badr Repo</title>
   <link rel="icon" href="assets/images/Neutronfile.png">
@@ -14,7 +14,7 @@
   <div class="repo">
     <nav class="nav">
       <a class="brand" href="./"><img src="assets/images/logo.png" alt="شعار بدر"><span>Badr Repo</span></a>
-      <div class="nav-links"><a href="#packages">الحزم</a><a href="#updates">آخر التحديثات</a><a href="#popular">الأكثر تحميلًا</a><a href="#add">إضافة السورس</a><a href="https://t.me/BadrBedrro" rel="noopener noreferrer">تواصل</a></div>
+      <div class="nav-links"><a href="#packages">الحزم</a><a href="#updates">آخر التحديثات</a><a href="#popular">الأكثر تحميلًا</a><a href="#stats">الإحصائيات</a><a href="#add">إضافة السورس</a><a href="https://t.me/BadrBedrro" rel="noopener noreferrer">تواصل</a></div>
     </nav>
 
     <header class="hero">
@@ -30,33 +30,33 @@
     </header>
 
     <main id="packages" class="wrap">
-      <section id="updates" class="feature-section" aria-labelledby="updates-title">
-        <div class="section-head feature-head">
-          <div><span class="eyebrow">جديد</span><h2 id="updates-title">آخر التحديثات</h2></div>
-          <span class="count">أحدث الإصدارات</span>
+      <section id="stats" class="stats-section" aria-labelledby="stats-title">
+        <div class="section-head"><div><span class="eyebrow">LIVE</span><h2 id="stats-title">إحصائيات الموقع</h2></div><span class="count">تتحدث تلقائيًا</span></div>
+        <div class="stats-grid">
+          <div class="stat-card"><span class="stat-icon">👥</span><strong id="total-visits">—</strong><span>إجمالي الزيارات</span></div>
+          <div class="stat-card"><span class="stat-icon">📅</span><strong id="today-visits">—</strong><span>زيارات اليوم</span></div>
+          <div class="stat-card"><span class="stat-icon">📦</span><strong id="package-total">—</strong><span>عدد الحزم</span></div>
         </div>
+        <p id="stats-status" class="section-note">جاري تحميل الإحصائيات…</p>
+      </section>
+
+      <section id="updates" class="feature-section" aria-labelledby="updates-title">
+        <div class="section-head feature-head"><div><span class="eyebrow">جديد</span><h2 id="updates-title">آخر التحديثات</h2></div><span class="count">أحدث الإصدارات</span></div>
         <div id="updates-grid" class="feature-grid" aria-live="polite"></div>
       </section>
 
       <section id="popular" class="feature-section" aria-labelledby="popular-title">
-        <div class="section-head feature-head">
-          <div><span class="eyebrow">مميزة</span><h2 id="popular-title">الأكثر تحميلًا</h2></div>
-          <span class="count">ترتيب مبدئي</span>
-        </div>
+        <div class="section-head feature-head"><div><span class="eyebrow">مميزة</span><h2 id="popular-title">الأكثر تحميلًا</h2></div><span class="count">ترتيب مبدئي</span></div>
         <div id="popular-grid" class="feature-grid" aria-live="polite"></div>
-        <p class="section-note">ملاحظة: المستودع لا يوفّر حاليًا عدّاد تحميلات لكل حزمة، لذلك هذا ترتيب مبدئي للحزم المميزة ويمكن ربطه بإحصائيات حقيقية لاحقًا.</p>
+        <p class="section-note">ملاحظة: ترتيب الحزم المميز ليس عداد تحميلات حقيقيًا حتى يتم ربط إحصائيات مستقلة لكل حزمة.</p>
       </section>
 
       <section class="package-section">
-        <div class="toolbar">
-          <input id="package-search" class="search" type="search" placeholder="🔎 ابحث باسم الحزمة أو الوصف أو المطور…" autocomplete="off" spellcheck="false">
-          <div id="filters" class="filters" aria-label="تصنيفات الحزم"></div>
-        </div>
+        <div class="toolbar"><input id="package-search" class="search" type="search" placeholder="🔎 ابحث باسم الحزمة أو الوصف أو المطور…" autocomplete="off" spellcheck="false"><div id="filters" class="filters" aria-label="تصنيفات الحزم"></div></div>
         <div class="section-head"><h2>كل الحزم</h2><span id="count" class="count">جاري التحميل…</span></div>
         <section id="package-grid" class="grid" aria-live="polite"></section>
       </section>
     </main>
-
     <footer class="footer">© Badr Repo — جميع الحقوق محفوظة</footer>
   </div>
   <noscript><div class="noscript">يجب تفعيل JavaScript لعرض الحزم والبحث والتصنيفات.</div></noscript>
