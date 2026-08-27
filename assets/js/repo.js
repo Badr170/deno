@@ -19,40 +19,44 @@
 
   async function loadVisitorCount(targetId, path) {
     const target = $(targetId);
-    if (!target) return;
+    if (!target) return false;
     target.textContent = '…';
 
     try {
-      const url = `${goatBase}${encodeURIComponent(path)}.json`;
+      // GoatCounter's root path is represented by a double slash in /counter//.json.
+      // Do not encode '/' for the homepage; TOTAL is a special path and must stay literal.
+      const counterPath = path === '/' ? '/' : path === 'TOTAL' ? 'TOTAL' : encodeURIComponent(path);
+      const url = `${goatBase}${counterPath}.json`;
       const response = await fetch(url, {
         method: 'GET',
         mode: 'cors',
         cache: 'no-store',
-        credentials: 'omit'
+        credentials: 'omit',
+        headers: { 'Accept': 'application/json' }
       });
       if (!response.ok) throw new Error(`GoatCounter HTTP ${response.status}`);
       const data = await response.json();
-      const count = data && (data.count ?? data.count_unique);
+      const count = data && data.count;
       if (count === undefined || count === null || count === '') throw new Error('GoatCounter count missing');
       target.textContent = englishDigits(count);
+      return true;
     } catch (error) {
       console.error(`GoatCounter counter failed for ${path}:`, error);
       target.textContent = '—';
+      return false;
     }
   }
 
   async function loadStats(){
     setStatus('جاري تحميل أعداد الزوار من GoatCounter…');
-    await Promise.all([
+    const results = await Promise.all([
       loadVisitorCount('goatcounter-page-count', '/'),
       loadVisitorCount('goatcounter-total-count', 'TOTAL')
     ]);
-    const page = $('goatcounter-page-count')?.textContent;
-    const total = $('goatcounter-total-count')?.textContent;
-    if (page !== '—' && total !== '—') {
+    if (results.every(Boolean)) {
       setStatus('أعداد الزوار محدثة عبر GoatCounter.');
     } else {
-      setStatus('تعذر تحميل أعداد الزوار من GoatCounter. تأكد من تفعيل عداد الزوار في إعدادات GoatCounter.');
+      setStatus('تعذر تحميل أعداد الزوار من GoatCounter.');
     }
   }
 
