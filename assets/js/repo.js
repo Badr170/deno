@@ -17,7 +17,12 @@
     if(Math.abs(distance)<2){window.scrollTo(0,target);return;}
     const duration=Math.min(5200,Math.max(1800,Math.abs(distance)*2.6)),startTime=performance.now();
     const ease=t=>t<.5?4*t*t*t:1-Math.pow(-2*t+2,3)/2;
-    function frame(now){const progress=Math.min(1,(now-startTime)/duration);window.scrollTo(0,start+distance*ease(progress));if(progress<1)requestAnimationFrame(frame)}
+    let cancelled=false;
+    const stop=()=>{cancelled=true;};
+    window.addEventListener('wheel',stop,{passive:true,once:true});
+    window.addEventListener('touchstart',stop,{passive:true,once:true});
+    window.addEventListener('pointerdown',stop,{passive:true,once:true});
+    function frame(now){if(cancelled)return;const progress=Math.min(1,(now-startTime)/duration);window.scrollTo(0,start+distance*ease(progress));if(progress<1)requestAnimationFrame(frame)}
     requestAnimationFrame(frame);
   }
   function restoreSelectedPackage(){try{const raw=sessionStorage.getItem(returnStateKey);if(!raw)return;const state=JSON.parse(raw);if(!state||Date.now()-state.time>30*60*1000){sessionStorage.removeItem(returnStateKey);return}if($('package-search')&&state.search)$('package-search').value=state.search;const card=document.querySelector(`[data-package-id="${CSS.escape(state.id)}"]`);if(!card)return;sessionStorage.removeItem(returnStateKey);window.scrollTo(0,0);setTimeout(()=>{cinematicScrollTo(card);card.classList.add('return-highlight');setTimeout(()=>card.classList.remove('return-highlight'),4000)},350)}catch(_){}}
