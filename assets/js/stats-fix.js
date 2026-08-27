@@ -11,16 +11,15 @@
     .replace(/[۰-۹]/g, d => String('۰۱۲۳۴۵۶۷۸۹'.indexOf(d)));
 
   async function getCount(path) {
-    // GoatCounter expects the page path as URL path segments, not encodeURIComponent(path).
-    // /deno/ -> /counter/deno/.json
-    // /     -> /counter//.json
-    const normalizedPath = path || '/';
-    const url = `${base}${normalizedPath}.json`;
+    // GoatCounter direct JSON endpoint expects the full page path URL-encoded.
+    const counterPath = path === 'TOTAL' ? 'TOTAL' : encodeURIComponent(path || '/');
+    const url = `${base}${counterPath}.json`;
     const response = await fetch(url, {
       method: 'GET',
       mode: 'cors',
       cache: 'no-store',
-      credentials: 'omit'
+      credentials: 'omit',
+      headers: { 'Accept': 'application/json' }
     });
     if (!response.ok) throw new Error(`HTTP ${response.status}`);
     const data = await response.json();
