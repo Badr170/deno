@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="referrer" content="strict-origin-when-cross-origin">
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self';img-src 'self' https: data:;style-src 'self';script-src 'self' https://gc.zgo.at;connect-src 'self' https://badr170.goatcounter.com;frame-ancestors 'none';base-uri 'self';form-action 'self';object-src 'none';upgrade-insecure-requests">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self';img-src 'self' https: data:;style-src 'self' 'unsafe-inline';script-src 'self' https://gc.zgo.at;connect-src 'self' https://badr170.goatcounter.com;frame-ancestors 'none';base-uri 'self';form-action 'self';object-src 'none';upgrade-insecure-requests">
   <meta name="description" content="سورس بدر - تعريب وأدوات وثيمات وخطوط لأجهزة iOS">
   <title>سورس بدر | Badr Repo</title>
   <link rel="icon" href="assets/images/Neutronfile.png">
@@ -33,7 +33,7 @@
       <section id="stats" class="stats-section" aria-labelledby="stats-title">
         <div class="section-head"><div><span class="eyebrow">LIVE</span><h2 id="stats-title">إحصائيات الموقع</h2></div><span class="count">GoatCounter</span></div>
         <div class="stats-grid">
-          <div class="stat-card"><span class="stat-icon">📊</span><strong>GoatCounter</strong><span>إحصائيات الزيارات</span></div>
+          <div class="stat-card"><span class="stat-icon">📊</span><strong>عدد الزيارات</strong><div id="goatcounter-visits" aria-live="polite"></div><span>إجمالي زيارات الموقع</span></div>
           <div class="stat-card"><span class="stat-icon">📦</span><strong id="package-total">—</strong><span>عدد الحزم</span></div>
           <div class="stat-card"><span class="stat-icon">🔗</span><a href="https://badr170.goatcounter.com/" target="_blank" rel="noopener noreferrer">لوحة الإحصائيات</a><span>فتح GoatCounter</span></div>
         </div>
@@ -61,6 +61,20 @@
   </div>
   <noscript><div class="noscript">يجب تفعيل JavaScript لعرض الحزم والبحث والتصنيفات.</div></noscript>
   <script data-goatcounter="https://badr170.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
-  <script src="assets/js/repo.js?v=3"></script>
+  <script>
+    window.addEventListener('load', function () {
+      if (window.goatcounter && typeof window.goatcounter.visit_count === 'function') {
+        window.goatcounter.visit_count({
+          append: '#goatcounter-visits',
+          type: 'svg',
+          style: `
+            #gcvc-border { fill: #222; stroke: #fff; }
+            #gcvc        { fill: #fff; }
+          `
+        });
+      }
+    });
+  </script>
+  <script src="assets/js/repo.js?v=4"></script>
 </body>
 </html>
