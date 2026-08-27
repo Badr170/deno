@@ -35,6 +35,20 @@
     catch (_) { setStatus('تعذر تحميل الإحصائيات حاليًا.'); }
   }
 
+  function cinematicScrollTo(element, duration=1500) {
+    const start = window.scrollY;
+    const target = Math.max(0, start + element.getBoundingClientRect().top - (window.innerHeight / 2) + (element.offsetHeight / 2));
+    const distance = target - start;
+    const startTime = performance.now();
+    const ease = (t) => t < 0.5 ? 4*t*t*t : 1 - Math.pow(-2*t + 2, 3) / 2;
+    function frame(now) {
+      const progress = Math.min(1, (now - startTime) / duration);
+      window.scrollTo(0, start + distance * ease(progress));
+      if(progress < 1) requestAnimationFrame(frame);
+    }
+    requestAnimationFrame(frame);
+  }
+
   function restoreSelectedPackage() {
     try {
       const raw=sessionStorage.getItem(returnStateKey);
@@ -45,11 +59,12 @@
       const card=document.querySelector(`[data-package-id="${CSS.escape(state.id)}"]`);
       if(!card) return;
       sessionStorage.removeItem(returnStateKey);
+      window.scrollTo(0, 0);
       setTimeout(()=>{
-        card.scrollIntoView({behavior:'smooth',block:'center'});
+        cinematicScrollTo(card, 1500);
         card.classList.add('return-highlight');
-        setTimeout(()=>card.classList.remove('return-highlight'),1600);
-      },80);
+        setTimeout(()=>card.classList.remove('return-highlight'),2200);
+      },220);
     } catch (_) {}
   }
 
