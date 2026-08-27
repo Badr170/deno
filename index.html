@@ -29,9 +29,9 @@
     </header>
     <main id="packages" class="wrap">
       <section id="stats" class="stats-section" aria-labelledby="stats-title">
-        <div class="section-head"><div><span class="eyebrow">مباشر</span><h2 id="stats-title">إحصائيات الموقع</h2></div><span class="count">عداد الزيارات</span></div>
+        <div class="section-head"><div><span class="eyebrow">مباشر</span><h2 id="stats-title">إحصائيات الموقع</h2></div><span class="count">إحصائيات الزيارات</span></div>
         <div class="stats-grid">
-          <div class="stat-card"><span class="stat-icon">📊</span><strong>عدد الزيارات</strong><div id="goatcounter-visits" aria-live="polite"><img src="https://badr170.goatcounter.com/counter/TOTAL.svg?v=1" alt="إجمالي زيارات الموقع" width="200" height="80"></div><span>إجمالي زيارات الموقع</span></div>
+          <div class="stat-card"><span class="stat-icon">📊</span><strong>عدد الزيارات</strong><div id="goatcounter-visits" aria-live="polite"><svg id="arabic-visit-counter" xmlns="http://www.w3.org/2000/svg" width="300" height="120" viewBox="0 0 300 120" role="img" aria-label="إجمالي زيارات الموقع"><rect x="1" y="1" width="298" height="118" rx="12" fill="#222" stroke="#fff" stroke-width="2"/><text x="150" y="39" text-anchor="middle" fill="#fff" font-size="20" font-family="Arial, sans-serif">إجمالي زيارات الموقع</text><text id="visit-number" x="150" y="78" text-anchor="middle" fill="#fff" font-size="32" font-weight="700" font-family="Arial, sans-serif">جاري التحميل…</text><text x="150" y="103" text-anchor="middle" fill="#fff" font-size="13" font-family="Arial, sans-serif">عداد الزيارات</text></svg></div><span>إجمالي زيارات الموقع</span></div>
           <div class="stat-card"><span class="stat-icon">📦</span><strong id="package-total">—</strong><span>عدد الحزم</span></div>
           <div class="stat-card"><span class="stat-icon">🔗</span><a href="https://badr170.goatcounter.com/" target="_blank" rel="noopener noreferrer">لوحة الإحصائيات</a><span>فتح لوحة الإحصائيات</span></div>
         </div>
@@ -56,6 +56,23 @@
   </div>
   <noscript><div class="noscript">يجب تفعيل JavaScript لعرض الحزم والبحث والتصنيفات.</div></noscript>
   <script data-goatcounter="https://badr170.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
-  <script src="assets/js/repo.js?v=7"></script>
+  <script>
+    (function () {
+      const number = document.getElementById('visit-number');
+      fetch('https://badr170.goatcounter.com/counter/TOTAL.json?v=' + Date.now(), { cache: 'no-store' })
+        .then(function (response) {
+          if (!response.ok) throw new Error('تعذر جلب الإحصائيات');
+          return response.json();
+        })
+        .then(function (data) {
+          const count = data && data.count != null ? String(data.count) : '0';
+          number.textContent = count;
+        })
+        .catch(function () {
+          number.textContent = 'غير متاح حاليًا';
+        });
+    })();
+  </script>
+  <script src="assets/js/repo.js?v=8"></script>
 </body>
 </html>
