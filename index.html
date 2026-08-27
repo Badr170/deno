@@ -59,39 +59,6 @@
   </div>
   <noscript><div class="noscript">يجب تفعيل JavaScript لعرض الحزم والبحث والتصنيفات.</div></noscript>
   <script data-goatcounter="https://badr170.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
-  <script>
-    (function () {
-      'use strict';
-
-      function loadCounter(targetId, path) {
-        var target = document.getElementById(targetId);
-        if (!target || !window.goatcounter || !window.goatcounter.visit_count) return false;
-
-        target.textContent = '';
-        window.goatcounter.visit_count({
-          append: '#' + targetId,
-          type: 'html',
-          path: path,
-          no_branding: true,
-          attr: {
-            width: '200',
-            height: '60',
-            title: 'إحصائيات الزوار'
-          },
-          style: 'div{border:0!important;background:transparent!important;padding:0!important;margin:0!important;width:auto!important;display:block!important;color:#fff!important}#gcvc-for,#gcvc-by{display:none!important}#gcvc-views{font-size:22px!important;font-weight:700!important;line-height:1.2!important;color:#fff!important;white-space:nowrap!important}'
-        });
-        return true;
-      }
-
-      function initCounters() {
-        if (!loadCounter('goatcounter-page-count', '/') || !loadCounter('goatcounter-total-count', 'TOTAL')) {
-          setTimeout(initCounters, 100);
-        }
-      }
-
-      initCounters();
-    })();
-  </script>
-  <script src="assets/js/repo.js?v=9"></script>
+  <script src="assets/js/repo.js?v=10"></script>
 </body>
 </html>
