@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="referrer" content="strict-origin-when-cross-origin">
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self';img-src 'self' https: data:;style-src 'self' 'unsafe-inline';script-src 'self' https://gc.zgo.at;connect-src 'self' https://badr170.goatcounter.com;frame-ancestors 'none';base-uri 'self';form-action 'self';object-src 'none';upgrade-insecure-requests">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self';img-src 'self' https: data:;style-src 'self' 'unsafe-inline';script-src 'self' https://gc.zgo.at;connect-src 'self' https://badr170.goatcounter.com;frame-src https://badr170.goatcounter.com;frame-ancestors 'none';base-uri 'self';form-action 'self';object-src 'none';upgrade-insecure-requests">
   <meta name="description" content="سورس بدر - تعريبات وأدوات وثيمات وخطوط لأجهزة iOS">
   <title>سورس بدر | Badr Repo</title>
   <link rel="icon" href="assets/images/Neutronfile.png">
@@ -33,8 +33,8 @@
         <div class="stats-grid">
           <div class="stat-card visit-stat-card" aria-label="إحصائيات زيارات الموقع">
             <div class="visit-stat-header"><span class="stat-icon">📊</span><strong>عدد الزيارات</strong></div>
-            <div class="visit-count-row"><span class="visit-count-label">زيارات الصفحة</span><strong id="goatcounter-page-count" class="visit-count-number" aria-live="polite">…</strong></div>
-            <div class="visit-count-row"><span class="visit-count-label">إجمالي زيارات الموقع</span><strong id="goatcounter-total-count" class="visit-count-number" aria-live="polite">…</strong></div>
+            <div class="visit-count-row"><span class="visit-count-label">زيارات الصفحة</span><span id="goatcounter-page-count" class="visit-count-number" aria-live="polite"></span></div>
+            <div class="visit-count-row"><span class="visit-count-label">إجمالي زيارات الموقع</span><span id="goatcounter-total-count" class="visit-count-number" aria-live="polite"></span></div>
           </div>
           <div class="stat-card"><span class="stat-icon">📦</span><strong id="package-total">—</strong><span>عدد الحزم</span></div>
           <div class="stat-card"><span class="stat-icon">🔗</span><a href="https://badr170.goatcounter.com/" target="_blank" rel="noopener noreferrer">لوحة الإحصائيات</a><span>فتح لوحة الإحصائيات</span></div>
@@ -64,27 +64,44 @@
     (function () {
       'use strict';
 
-      var pageCountUrl = 'https://badr170.goatcounter.com/counter//.json';
-      var totalCountUrl = 'https://badr170.goatcounter.com/counter/TOTAL.json';
+      var counterStyle = [
+        'html,body{margin:0!important;padding:0!important;background:transparent!important;overflow:hidden!important}',
+        'div{border:0!important;background:transparent!important;padding:0!important;margin:0!important;width:auto!important;height:auto!important;display:block!important}',
+        '#gcvc-for,#gcvc-by{display:none!important}',
+        '#gcvc-views{font-size:22px!important;font-weight:700!important;line-height:1.2!important;color:#fff!important;white-space:nowrap!important}'
+      ].join(' ');
 
-      function loadVisitCount(url, targetId) {
-        fetch(url, { cache: 'no-store', credentials: 'omit' })
-          .then(function (response) {
-            if (!response.ok) throw new Error('GoatCounter request failed');
-            return response.json();
-          })
-          .then(function (data) {
-            var target = document.getElementById(targetId);
-            if (target) target.textContent = data && data.count != null ? String(data.count) : '—';
-          })
-          .catch(function () {
-            var target = document.getElementById(targetId);
-            if (target) target.textContent = '—';
-          });
+      function showCounter(targetId, path) {
+        var target = document.getElementById(targetId);
+        if (!target || !window.goatcounter || !window.goatcounter.visit_count) return;
+
+        target.innerHTML = '';
+        window.goatcounter.visit_count({
+          append: '#' + targetId,
+          type: 'html',
+          path: path,
+          no_branding: true,
+          attr: {
+            width: '100%',
+            height: '34',
+            title: 'إحصائيات الزيارات'
+          },
+          style: counterStyle
+        });
       }
 
-      loadVisitCount(pageCountUrl, 'goatcounter-page-count');
-      loadVisitCount(totalCountUrl, 'goatcounter-total-count');
+      function initCounters() {
+        if (window.goatcounter && window.goatcounter.visit_count) {
+          showCounter('goatcounter-page-count', '/');
+          showCounter('goatcounter-total-count', 'TOTAL');
+          var status = document.getElementById('stats-status');
+          if (status) status.textContent = 'يتم تحديث أرقام الزيارات من GoatCounter.';
+          return;
+        }
+        setTimeout(initCounters, 100);
+      }
+
+      initCounters();
     })();
   </script>
   <script src="assets/js/repo.js?v=9"></script>
