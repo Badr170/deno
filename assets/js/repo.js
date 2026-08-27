@@ -4,6 +4,7 @@
   const $ = (id) => document.getElementById(id);
   const esc = (value) => String(value ?? '').replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
   const safeUrl = (value) => /^(https?:\/\/|\.\/|\/)/i.test(String(value || ''));
+  const packageUrl = (id) => `sileo://package/${encodeURIComponent(id)}`;
 
   const parsePackages = (text) => text.split(/\n\s*\n/).map((block) => {
     const p = {};
@@ -17,13 +18,11 @@
 
   const iconHtml = (icon) => safeUrl(icon) ? `<img src="${esc(icon)}" alt="" loading="lazy" referrerpolicy="no-referrer">` : '📦';
   const cardHtml = (p) => `<a class="card" href="package.html?id=${encodeURIComponent(p.id)}"><div class="card-top"><div class="icon">${iconHtml(p.icon)}</div><div><h3>${esc(p.name)}</h3><div class="meta">الإصدار ${esc(p.version||'غير محدد')}</div></div></div><p class="desc">${esc(p.desc)}</p><div class="meta">${esc(p.section)}${p.author ? ` • ${esc(p.author)}` : ''}</div></a>`;
-  const featureHtml = (p) => `<a class="card feature-card" href="package.html?id=${encodeURIComponent(p.id)}"><div class="card-top"><div class="icon">${iconHtml(p.icon)}</div><div><h3>${esc(p.name)}</h3><div class="meta">${esc(p.version)}</div></div></div><p class="desc">${esc(p.desc)}</p></a>`;
+  const featureHtml = (p) => `<article class="card feature-card featured-card"><a class="card-link" href="package.html?id=${encodeURIComponent(p.id)}"><div class="card-top"><div class="icon">${iconHtml(p.icon)}</div><div><h3>${esc(p.name)}</h3><div class="meta">الإصدار ${esc(p.version||'غير محدد')}</div></div></div><p class="desc">${esc(p.desc)}</p><div class="meta">${esc(p.section)}${p.author ? ` • ${esc(p.author)}` : ''}</div></a><a class="install-btn" href="${packageUrl(p.id)}" aria-label="تثبيت ${esc(p.name)}" title="تثبيت ${esc(p.name)}">تثبيت</a></article>`;
   const setStatus = (text) => { const el=$('stats-status'); if(el) el.textContent=text; };
 
   async function loadStats() {
     try {
-      // GoatCounter counts page views automatically via its script.
-      // The dashboard is linked below; no unauthenticated API calls are made.
       setStatus('إحصائيات الزيارات تُسجّل عبر GoatCounter.');
     } catch (_) {
       setStatus('تعذر تحميل الإحصائيات حاليًا.');
