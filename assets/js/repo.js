@@ -20,31 +20,26 @@
   const iconHtml = (icon) => safeUrl(icon) ? `<img src="${esc(icon)}" alt="" loading="lazy" referrerpolicy="no-referrer">` : '📦';
 
   const saveReturnState = (id) => {
-    try {
-      sessionStorage.setItem(returnStateKey, JSON.stringify({ id, y: window.scrollY, search: $('package-search')?.value || '', time: Date.now() }));
-    } catch (_) {}
+    try { sessionStorage.setItem(returnStateKey, JSON.stringify({ id, y: window.scrollY, search: $('package-search')?.value || '', time: Date.now() })); } catch (_) {}
   };
 
   const cardHtml = (p) => `<article class="card package-card" data-package-id="${esc(p.id)}"><a class="card-link package-detail-link" href="package.html?id=${encodeURIComponent(p.id)}"><div class="card-top"><div class="icon">${iconHtml(p.icon)}</div><div><h3>${esc(p.name)}</h3><div class="meta">الإصدار ${esc(p.version||'غير محدد')}</div></div></div><p class="desc">${esc(p.desc)}</p><div class="meta">${esc(p.section)}${p.author ? ` • ${esc(p.author)}` : ''}</div></a><a class="install-btn" href="${packageUrl(p.id)}" aria-label="تثبيت ${esc(p.name)}" title="تثبيت ${esc(p.name)}">تثبيت</a></article>`;
-
   const featureHtml = (p) => `<article class="card feature-card featured-card" data-package-id="${esc(p.id)}"><a class="card-link package-detail-link" href="package.html?id=${encodeURIComponent(p.id)}"><div class="card-top"><div class="icon">${iconHtml(p.icon)}</div><div><h3>${esc(p.name)}</h3><div class="meta">الإصدار ${esc(p.version||'غير محدد')}</div></div></div><p class="desc">${esc(p.desc)}</p><div class="meta">${esc(p.section)}${p.author ? ` • ${esc(p.author)}` : ''}</div></a><a class="install-btn" href="${packageUrl(p.id)}" aria-label="تثبيت ${esc(p.name)}" title="تثبيت ${esc(p.name)}">تثبيت</a></article>`;
   const setStatus = (text) => { const el=$('stats-status'); if(el) el.textContent=text; };
 
-  async function loadStats() {
-    try { setStatus('إحصائيات الزيارات تُسجّل عبر GoatCounter.'); }
-    catch (_) { setStatus('تعذر تحميل الإحصائيات حاليًا.'); }
-  }
+  async function loadStats() { try { setStatus('إحصائيات الزيارات تُسجّل عبر GoatCounter.'); } catch (_) { setStatus('تعذر تحميل الإحصائيات حاليًا.'); } }
 
-  function cinematicScrollTo(element, duration=1500) {
+  function cinematicScrollTo(element, duration=2600) {
     const start = window.scrollY;
     const target = Math.max(0, start + element.getBoundingClientRect().top - (window.innerHeight / 2) + (element.offsetHeight / 2));
     const distance = target - start;
     const startTime = performance.now();
-    const ease = (t) => t < 0.5 ? 4*t*t*t : 1 - Math.pow(-2*t + 2, 3) / 2;
+    const ease = (t) => t < 0.5 ? 2 * t * t : 1 - Math.pow(-2 * t + 2, 2) / 2;
     function frame(now) {
       const progress = Math.min(1, (now - startTime) / duration);
-      window.scrollTo(0, start + distance * ease(progress));
-      if(progress < 1) requestAnimationFrame(frame);
+      const eased = ease(progress);
+      window.scrollTo(0, start + distance * eased);
+      if (progress < 1) requestAnimationFrame(frame);
     }
     requestAnimationFrame(frame);
   }
@@ -61,10 +56,10 @@
       sessionStorage.removeItem(returnStateKey);
       window.scrollTo(0, 0);
       setTimeout(()=>{
-        cinematicScrollTo(card, 1500);
+        cinematicScrollTo(card, 2600);
         card.classList.add('return-highlight');
-        setTimeout(()=>card.classList.remove('return-highlight'),2200);
-      },220);
+        setTimeout(()=>card.classList.remove('return-highlight'),3200);
+      },500);
     } catch (_) {}
   }
 
@@ -85,17 +80,10 @@
       if(count) count.textContent=`${filtered.length.toLocaleString('ar-SA')} حزمة`;
       if(grid) grid.innerHTML=filtered.length?filtered.map(cardHtml).join(''):'<div class="empty">لا توجد حزم مطابقة لبحثك.</div>';
     }
-    search?.addEventListener('input',apply); apply();
-    restoreSelectedPackage();
+    search?.addEventListener('input',apply); apply(); restoreSelectedPackage();
   }
 
-  document.addEventListener('click',(event)=>{
-    const link=event.target.closest('.package-detail-link');
-    if(link){
-      const card=link.closest('[data-package-id]');
-      if(card) saveReturnState(card.dataset.packageId);
-    }
-  });
+  document.addEventListener('click',(event)=>{ const link=event.target.closest('.package-detail-link'); if(link){ const card=link.closest('[data-package-id]'); if(card) saveReturnState(card.dataset.packageId); } });
 
   async function init(){
     try{
@@ -110,6 +98,5 @@
       setStatus('تعذر تحميل البيانات حاليًا.');
     }
   }
-
   if(document.readyState==='loading') document.addEventListener('DOMContentLoaded',init,{once:true}); else init();
 })();
