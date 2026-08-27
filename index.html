@@ -33,8 +33,8 @@
         <div class="stats-grid">
           <div class="stat-card visit-stat-card" aria-label="إحصائيات الزوار الفريدين">
             <div class="visit-stat-header"><span class="stat-icon">📊</span><strong>عدد الزوار الفريدين</strong></div>
-            <div class="visit-count-row"><span class="visit-count-label">زوار الصفحة</span><span class="visit-count-number"><iframe title="عدد زوار الصفحة" src="https://badr170.goatcounter.com/counter//.html?no_branding=1" width="200" height="34" frameborder="0" scrolling="no" loading="eager"></iframe></span></div>
-            <div class="visit-count-row"><span class="visit-count-label">زوار الموقع</span><span class="visit-count-number"><iframe title="عدد زوار الموقع" src="https://badr170.goatcounter.com/counter/TOTAL.html?no_branding=1" width="200" height="34" frameborder="0" scrolling="no" loading="eager"></iframe></span></div>
+            <div class="visit-count-row"><span class="visit-count-label">زوار الصفحة</span><span id="goatcounter-page-count" class="visit-count-number" aria-live="polite">…</span></div>
+            <div class="visit-count-row"><span class="visit-count-label">زوار الموقع</span><span id="goatcounter-total-count" class="visit-count-number" aria-live="polite">…</span></div>
           </div>
           <div class="stat-card"><span class="stat-icon">📦</span><strong id="package-total">—</strong><span>عدد الحزم</span></div>
         </div>
@@ -59,6 +59,62 @@
   </div>
   <noscript><div class="noscript">يجب تفعيل JavaScript لعرض الحزم والبحث والتصنيفات.</div></noscript>
   <script data-goatcounter="https://badr170.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+  <script>
+    (function () {
+      'use strict';
+
+      function arabicDigits(value) {
+        return String(value).replace(/[0-9]/g, function (digit) {
+          return '٠١٢٣٤٥٦٧٨٩'[digit];
+        });
+      }
+
+      function convertTextNodes(root) {
+        var walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT);
+        var nodes = [];
+        var node;
+        while ((node = walker.nextNode())) nodes.push(node);
+        nodes.forEach(function (textNode) {
+          textNode.nodeValue = textNode.nodeValue.replace(/[0-9]/g, function (digit) {
+            return '٠١٢٣٤٥٦٧٨٩'[digit];
+          });
+        });
+      }
+
+      function loadCounter(targetId, path) {
+        var target = document.getElementById(targetId);
+        if (!target || !window.goatcounter || !window.goatcounter.visit_count) return false;
+
+        target.textContent = '';
+        var observer = new MutationObserver(function () {
+          convertTextNodes(target);
+        });
+        observer.observe(target, { childList: true, subtree: true, characterData: true });
+
+        window.goatcounter.visit_count({
+          append: '#' + targetId,
+          type: 'html',
+          path: path,
+          no_branding: true,
+          attr: {
+            width: '200',
+            height: '60',
+            title: 'إحصائيات الزوار'
+          },
+          style: 'div{border:0!important;background:transparent!important;padding:0!important;margin:0!important;width:auto!important;display:block!important;color:#fff!important}#gcvc-for,#gcvc-by{display:none!important}#gcvc-views{font-size:22px!important;font-weight:700!important;line-height:1.2!important;color:#fff!important;white-space:nowrap!important}'
+        });
+        return true;
+      }
+
+      function initCounters() {
+        if (!loadCounter('goatcounter-page-count', '/') || !loadCounter('goatcounter-total-count', 'TOTAL')) {
+          setTimeout(initCounters, 100);
+        }
+      }
+
+      initCounters();
+    })();
+  </script>
   <script src="assets/js/repo.js?v=9"></script>
 </body>
 </html>
