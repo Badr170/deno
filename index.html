@@ -16,7 +16,6 @@
       <a class="brand" href="./"><img src="assets/images/logo.png" alt="شعار بدر"><span>Badr Repo</span></a>
       <div class="nav-links"><a href="#packages">الحزم</a><a href="#updates">آخر التحديثات</a><a href="#popular">الأكثر تحميلًا</a><a href="#stats">الإحصائيات</a><a href="#add">إضافة السورس</a><a href="https://t.me/BadrBedrro" rel="noopener noreferrer">تواصل</a></div>
     </nav>
-
     <header class="hero">
       <span class="badge">Sileo • Zebra • Cydia • Installer</span>
       <h1>سورس بدر</h1>
@@ -28,7 +27,6 @@
         <a class="btn" href="installer://add/repo=https://badr170.github.io/deno/">إضافة إلى Installer</a>
       </div>
     </header>
-
     <main id="packages" class="wrap">
       <section id="stats" class="stats-section" aria-labelledby="stats-title">
         <div class="section-head"><div><span class="eyebrow">LIVE</span><h2 id="stats-title">إحصائيات الموقع</h2></div><span class="count">GoatCounter</span></div>
@@ -39,18 +37,15 @@
         </div>
         <p id="stats-status" class="section-note">يتم تسجيل زيارات الموقع تلقائيًا عبر GoatCounter.</p>
       </section>
-
       <section id="updates" class="feature-section" aria-labelledby="updates-title">
         <div class="section-head feature-head"><div><span class="eyebrow">جديد</span><h2 id="updates-title">آخر التحديثات</h2></div><span class="count">أحدث الإصدارات</span></div>
         <div id="updates-grid" class="feature-grid" aria-live="polite"></div>
       </section>
-
       <section id="popular" class="feature-section" aria-labelledby="popular-title">
         <div class="section-head feature-head"><div><span class="eyebrow">مميزة</span><h2 id="popular-title">الأكثر تحميلًا</h2></div><span class="count">ترتيب مبدئي</span></div>
         <div id="popular-grid" class="feature-grid" aria-live="polite"></div>
         <p class="section-note">ملاحظة: ترتيب الحزم المميز ليس عداد تحميلات حقيقيًا حتى يتم ربط إحصائيات مستقلة لكل حزمة.</p>
       </section>
-
       <section class="package-section">
         <div class="toolbar"><input id="package-search" class="search" type="search" placeholder="🔎 ابحث باسم الحزمة أو الوصف أو المطور…" autocomplete="off" spellcheck="false"><div id="filters" class="filters" aria-label="تصنيفات الحزم"></div></div>
         <div class="section-head"><h2>كل الحزم</h2><span id="count" class="count">جاري التحميل…</span></div>
@@ -60,21 +55,22 @@
     <footer class="footer">© Badr Repo — جميع الحقوق محفوظة</footer>
   </div>
   <noscript><div class="noscript">يجب تفعيل JavaScript لعرض الحزم والبحث والتصنيفات.</div></noscript>
-  <script data-goatcounter="https://badr170.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+  <script data-goatcounter="https://badr170.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
   <script>
-    window.addEventListener('load', function () {
-      if (window.goatcounter && typeof window.goatcounter.visit_count === 'function') {
+    var t = setInterval(function() {
+      if (window.goatcounter && window.goatcounter.visit_count) {
+        clearInterval(t);
         window.goatcounter.visit_count({
           append: '#goatcounter-visits',
           type: 'svg',
           style: `
             #gcvc-border { fill: #222; stroke: #fff; }
-            #gcvc        { fill: #fff; }
+            #gcvc { fill: #fff; }
           `
         });
       }
-    });
+    }, 100);
   </script>
-  <script src="assets/js/repo.js?v=4"></script>
+  <script src="assets/js/repo.js?v=5"></script>
 </body>
 </html>
