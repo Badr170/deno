@@ -100,6 +100,7 @@ function updatePackageSEO(p) {
   setMeta('#twitter-description', description);
   setMeta('#twitter-image', image);
 
+  // Schema.org: بيانات منظمة خاصة بكل حزمة، تُبنى مباشرة من Packages.
   let jsonLd = document.getElementById('package-jsonld');
   if (!jsonLd) {
     jsonLd = document.createElement('script');
@@ -108,17 +109,43 @@ function updatePackageSEO(p) {
     document.head.appendChild(jsonLd);
   }
 
-  jsonLd.textContent = JSON.stringify({
-    '@context': 'https://schema.org',
+  const software = {
     '@type': 'SoftwareApplication',
+    '@id': `${canonical}#software`,
     name,
+    identifier: p.id,
     description,
     url: canonical,
     applicationCategory: 'UtilitiesApplication',
     operatingSystem: 'iOS',
-    softwareVersion: p.version || undefined,
-    image
-  });
+    image,
+    ...(p.version ? { softwareVersion: p.version } : {}),
+    ...(p.author ? { author: { '@type': 'Person', name: p.author } } : {}),
+    isAccessibleForFree: true
+  };
+
+  const schema = {
+    '@context': 'https://schema.org',
+    '@graph': [
+      {
+        '@type': 'WebPage',
+        '@id': `${canonical}#webpage`,
+        url: canonical,
+        name: title,
+        description,
+        inLanguage: 'ar',
+        isPartOf: {
+          '@type': 'WebSite',
+          name: 'Badr Repo',
+          url: repo
+        },
+        mainEntity: { '@id': `${canonical}#software` }
+      },
+      software
+    ]
+  };
+
+  jsonLd.textContent = JSON.stringify(schema);
 }
 
 function goBackToPackages(e) {
