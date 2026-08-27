@@ -22,7 +22,9 @@
     if (!target) return false;
     target.textContent = '…';
     try {
-      const counterPath = path === '/' ? '/' : path === 'TOTAL' ? 'TOTAL' : encodeURIComponent(path);
+      // GoatCounter's direct JSON endpoint requires the full path URL-encoded.
+      // Example: /deno/ -> /counter/%2Fdeno%2F.json
+      const counterPath = path === 'TOTAL' ? 'TOTAL' : encodeURIComponent(path || '/');
       const url = `${goatBase}${counterPath}.json`;
       const response = await fetch(url, { method:'GET', mode:'cors', cache:'no-store', credentials:'omit', headers:{'Accept':'application/json'} });
       if (!response.ok) throw new Error(`GoatCounter HTTP ${response.status}`);
@@ -40,8 +42,9 @@
 
   async function loadStats(){
     setStatus('جاري تحميل أعداد الزوار من GoatCounter…');
+    const pagePath = window.location.pathname || '/';
     const results = await Promise.all([
-      loadVisitorCount('goatcounter-page-count', '/'),
+      loadVisitorCount('goatcounter-page-count', pagePath),
       loadVisitorCount('goatcounter-total-count', 'TOTAL')
     ]);
     setStatus(results.every(Boolean) ? 'أعداد الزوار محدثة عبر GoatCounter.' : 'تعذر تحميل أعداد الزوار من GoatCounter.');
