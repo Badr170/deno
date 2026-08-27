@@ -21,17 +21,13 @@
   const setStatus = (text) => { const el=$('stats-status'); if(el) el.textContent=text; };
 
   async function loadStats() {
-    const base='https://api.counterapi.dev/v1/badr170-deno';
-    const todayKey=`today-${new Date().toISOString().slice(0,10)}`;
     try {
-      const [total,today]=await Promise.all([
-        fetch(`${base}/visits/up?amount=1`).then(r=>r.ok?r.json():null),
-        fetch(`${base}/${todayKey}/up?amount=1`).then(r=>r.ok?r.json():null)
-      ]);
-      if(total?.count!=null && $('total-visits')) $('total-visits').textContent=Number(total.count).toLocaleString('ar-SA');
-      if(today?.count!=null && $('today-visits')) $('today-visits').textContent=Number(today.count).toLocaleString('ar-SA');
-      setStatus('الإحصائيات محدثة تلقائيًا.');
-    } catch (_) { setStatus('تعذر تحميل عداد الزيارات حاليًا، بينما تبقى الحزم والبحث تعمل بشكل طبيعي.'); }
+      // GoatCounter counts page views automatically via its script.
+      // The dashboard is linked below; no unauthenticated API calls are made.
+      setStatus('إحصائيات الزيارات تُسجّل عبر GoatCounter.');
+    } catch (_) {
+      setStatus('تعذر تحميل الإحصائيات حاليًا.');
+    }
   }
 
   function render(packages) {
