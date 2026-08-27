@@ -5,13 +5,57 @@
   const safeUrl = (value) => /^(https?:\/\/|\.\/|\/)/i.test(String(value || ''));
   const packageUrl = (id) => `cydia://package/${encodeURIComponent(id)}`;
   const returnStateKey = 'badrRepoReturnState';
+  const goatBase = 'https://badr170.goatcounter.com/counter/';
   const parsePackages = (text) => text.split(/\n\s*\n/).map(block=>{const p={};block.split(/\r?\n/).forEach(line=>{const i=line.indexOf(':');if(i>0)p[line.slice(0,i).trim()]=line.slice(i+1).trim()});if(!p.Package)return null;return{id:p.Package,name:p.Name||p.Package,version:p.Version||'',section:p.Section||'Other',desc:p.Description||'لا يوجد وصف',author:p.Author||p.Maintainer||'',arch:p.Architecture||'',filename:p.Filename||'',size:p.Size||'',icon:p.Icon||''}}).filter(Boolean);
   const iconHtml = icon => safeUrl(icon)?`<img src="${esc(icon)}" alt="" loading="lazy" referrerpolicy="no-referrer">`:'📦';
   const saveReturnState=id=>{try{sessionStorage.setItem(returnStateKey,JSON.stringify({id,y:window.scrollY,search:$('package-search')?.value||'',time:Date.now()}))}catch(_){}};
   const cardHtml=p=>`<article class="card package-card" data-package-id="${esc(p.id)}"><a class="card-link package-detail-link" href="package.html?id=${encodeURIComponent(p.id)}"><div class="card-top"><div class="icon">${iconHtml(p.icon)}</div><div><h3>${esc(p.name)}</h3><div class="meta">الإصدار ${esc(p.version||'غير محدد')}</div></div></div><p class="desc">${esc(p.desc)}</p><div class="meta">${esc(p.section)}${p.author?` • ${esc(p.author)}`:''}</div></a><a class="install-btn" href="${packageUrl(p.id)}" aria-label="تثبيت ${esc(p.name)}" title="تثبيت ${esc(p.name)}">تثبيت</a></article>`;
   const featureHtml=p=>`<article class="card feature-card featured-card" data-package-id="${esc(p.id)}"><a class="card-link package-detail-link" href="package.html?id=${encodeURIComponent(p.id)}"><div class="card-top"><div class="icon">${iconHtml(p.icon)}</div><div><h3>${esc(p.name)}</h3><div class="meta">الإصدار ${esc(p.version||'غير محدد')}</div></div></div><p class="desc">${esc(p.desc)}</p><div class="meta">${esc(p.section)}${p.author?` • ${esc(p.author)}`:''}</div></a><a class="install-btn" href="${packageUrl(p.id)}" aria-label="تثبيت ${esc(p.name)}" title="تثبيت ${esc(p.name)}">تثبيت</a></article>`;
   const setStatus=text=>{const el=$('stats-status');if(el)el.textContent=text};
-  async function loadStats(){try{setStatus('إحصائيات الزيارات تُسجّل عبر GoatCounter.')}catch(_){setStatus('تعذر تحميل الإحصائيات حاليًا.')}}
+
+  const englishDigits = value => String(value ?? '')
+    .replace(/[٠-٩]/g, d => String('٠١٢٣٤٥٦٧٨٩'.indexOf(d)))
+    .replace(/[۰-۹]/g, d => String('۰۱۲۳۴۵۶۷۸۹'.indexOf(d)));
+
+  async function loadVisitorCount(targetId, path) {
+    const target = $(targetId);
+    if (!target) return;
+    target.textContent = '…';
+
+    try {
+      const url = `${goatBase}${encodeURIComponent(path)}.json`;
+      const response = await fetch(url, {
+        method: 'GET',
+        mode: 'cors',
+        cache: 'no-store',
+        credentials: 'omit'
+      });
+      if (!response.ok) throw new Error(`GoatCounter HTTP ${response.status}`);
+      const data = await response.json();
+      const count = data && (data.count ?? data.count_unique);
+      if (count === undefined || count === null || count === '') throw new Error('GoatCounter count missing');
+      target.textContent = englishDigits(count);
+    } catch (error) {
+      console.error(`GoatCounter counter failed for ${path}:`, error);
+      target.textContent = '—';
+    }
+  }
+
+  async function loadStats(){
+    setStatus('جاري تحميل أعداد الزوار من GoatCounter…');
+    await Promise.all([
+      loadVisitorCount('goatcounter-page-count', '/'),
+      loadVisitorCount('goatcounter-total-count', 'TOTAL')
+    ]);
+    const page = $('goatcounter-page-count')?.textContent;
+    const total = $('goatcounter-total-count')?.textContent;
+    if (page !== '—' && total !== '—') {
+      setStatus('أعداد الزوار محدثة عبر GoatCounter.');
+    } else {
+      setStatus('تعذر تحميل أعداد الزوار من GoatCounter. تأكد من تفعيل عداد الزوار في إعدادات GoatCounter.');
+    }
+  }
+
   function cinematicScrollTo(element){
     const start=window.scrollY,target=Math.max(0,start+element.getBoundingClientRect().top-window.innerHeight/2+element.offsetHeight/2),distance=target-start;
     if(Math.abs(distance)<2){window.scrollTo(0,target);return;}
