@@ -5,6 +5,7 @@
   const esc = (value) => String(value ?? '').replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
   const safeUrl = (value) => /^(https?:\/\/|\.\/|\/)/i.test(String(value || ''));
   const packageUrl = (id) => `cydia://package/${encodeURIComponent(id)}`;
+  const returnStateKey = 'badrRepoReturnState';
 
   const parsePackages = (text) => text.split(/\n\s*\n/).map((block) => {
     const p = {};
@@ -18,15 +19,38 @@
 
   const iconHtml = (icon) => safeUrl(icon) ? `<img src="${esc(icon)}" alt="" loading="lazy" referrerpolicy="no-referrer">` : '📦';
 
-  // Every package card opens its package directly in Cydia.
-  const cardHtml = (p) => `<article class="card package-card"><a class="card-link" href="package.html?id=${encodeURIComponent(p.id)}"><div class="card-top"><div class="icon">${iconHtml(p.icon)}</div><div><h3>${esc(p.name)}</h3><div class="meta">الإصدار ${esc(p.version||'غير محدد')}</div></div></div><p class="desc">${esc(p.desc)}</p><div class="meta">${esc(p.section)}${p.author ? ` • ${esc(p.author)}` : ''}</div></a><a class="install-btn" href="${packageUrl(p.id)}" aria-label="تثبيت ${esc(p.name)}" title="تثبيت ${esc(p.name)}">تثبيت</a></article>`;
+  const saveReturnState = (id) => {
+    try {
+      sessionStorage.setItem(returnStateKey, JSON.stringify({ id, y: window.scrollY, search: $('package-search')?.value || '', time: Date.now() }));
+    } catch (_) {}
+  };
 
-  const featureHtml = (p) => `<article class="card feature-card featured-card"><a class="card-link" href="package.html?id=${encodeURIComponent(p.id)}"><div class="card-top"><div class="icon">${iconHtml(p.icon)}</div><div><h3>${esc(p.name)}</h3><div class="meta">الإصدار ${esc(p.version||'غير محدد')}</div></div></div><p class="desc">${esc(p.desc)}</p><div class="meta">${esc(p.section)}${p.author ? ` • ${esc(p.author)}` : ''}</div></a><a class="install-btn" href="${packageUrl(p.id)}" aria-label="تثبيت ${esc(p.name)}" title="تثبيت ${esc(p.name)}">تثبيت</a></article>`;
+  const cardHtml = (p) => `<article class="card package-card" data-package-id="${esc(p.id)}"><a class="card-link package-detail-link" href="package.html?id=${encodeURIComponent(p.id)}"><div class="card-top"><div class="icon">${iconHtml(p.icon)}</div><div><h3>${esc(p.name)}</h3><div class="meta">الإصدار ${esc(p.version||'غير محدد')}</div></div></div><p class="desc">${esc(p.desc)}</p><div class="meta">${esc(p.section)}${p.author ? ` • ${esc(p.author)}` : ''}</div></a><a class="install-btn" href="${packageUrl(p.id)}" aria-label="تثبيت ${esc(p.name)}" title="تثبيت ${esc(p.name)}">تثبيت</a></article>`;
+
+  const featureHtml = (p) => `<article class="card feature-card featured-card" data-package-id="${esc(p.id)}"><a class="card-link package-detail-link" href="package.html?id=${encodeURIComponent(p.id)}"><div class="card-top"><div class="icon">${iconHtml(p.icon)}</div><div><h3>${esc(p.name)}</h3><div class="meta">الإصدار ${esc(p.version||'غير محدد')}</div></div></div><p class="desc">${esc(p.desc)}</p><div class="meta">${esc(p.section)}${p.author ? ` • ${esc(p.author)}` : ''}</div></a><a class="install-btn" href="${packageUrl(p.id)}" aria-label="تثبيت ${esc(p.name)}" title="تثبيت ${esc(p.name)}">تثبيت</a></article>`;
   const setStatus = (text) => { const el=$('stats-status'); if(el) el.textContent=text; };
 
   async function loadStats() {
     try { setStatus('إحصائيات الزيارات تُسجّل عبر GoatCounter.'); }
     catch (_) { setStatus('تعذر تحميل الإحصائيات حاليًا.'); }
+  }
+
+  function restoreSelectedPackage() {
+    try {
+      const raw=sessionStorage.getItem(returnStateKey);
+      if(!raw) return;
+      const state=JSON.parse(raw);
+      if(!state || Date.now()-state.time>30*60*1000) { sessionStorage.removeItem(returnStateKey); return; }
+      if($('package-search') && state.search) $('package-search').value=state.search;
+      const card=document.querySelector(`[data-package-id="${CSS.escape(state.id)}"]`);
+      if(!card) return;
+      sessionStorage.removeItem(returnStateKey);
+      setTimeout(()=>{
+        card.scrollIntoView({behavior:'smooth',block:'center'});
+        card.classList.add('return-highlight');
+        setTimeout(()=>card.classList.remove('return-highlight'),1600);
+      },80);
+    } catch (_) {}
   }
 
   function render(packages) {
@@ -47,7 +71,16 @@
       if(grid) grid.innerHTML=filtered.length?filtered.map(cardHtml).join(''):'<div class="empty">لا توجد حزم مطابقة لبحثك.</div>';
     }
     search?.addEventListener('input',apply); apply();
+    restoreSelectedPackage();
   }
+
+  document.addEventListener('click',(event)=>{
+    const link=event.target.closest('.package-detail-link');
+    if(link){
+      const card=link.closest('[data-package-id]');
+      if(card) saveReturnState(card.dataset.packageId);
+    }
+  });
 
   async function init(){
     try{
