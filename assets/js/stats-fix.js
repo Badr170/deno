@@ -11,17 +11,29 @@
     .replace(/[۰-۹]/g, d => String('۰۱۲۳۴۵۶۷۸۹'.indexOf(d)));
 
   async function getCount(path) {
-    const url = `${base}${encodeURIComponent(path)}.json`;
-    const response = await fetch(url, { method: 'GET', mode: 'cors', cache: 'no-store', credentials: 'omit' });
+    // GoatCounter expects the page path as URL path segments, not encodeURIComponent(path).
+    // /deno/ -> /counter/deno/.json
+    // /     -> /counter//.json
+    const normalizedPath = path || '/';
+    const url = `${base}${normalizedPath}.json`;
+    const response = await fetch(url, {
+      method: 'GET',
+      mode: 'cors',
+      cache: 'no-store',
+      credentials: 'omit'
+    });
     if (!response.ok) throw new Error(`HTTP ${response.status}`);
     const data = await response.json();
-    if (data?.count === undefined || data?.count === null || data?.count === '') throw new Error('count missing');
+    if (data?.count === undefined || data?.count === null || data?.count === '') {
+      throw new Error('count missing');
+    }
     return toEnglishDigits(data.count);
   }
 
   async function fixPageCount() {
     try {
-      pageEl.textContent = await getCount(window.location.pathname || '/');
+      const path = window.location.pathname || '/';
+      pageEl.textContent = await getCount(path);
       if (totalEl && totalEl.textContent && totalEl.textContent !== '…' && totalEl.textContent !== '—') {
         if (statusEl) statusEl.textContent = 'أعداد الزوار محدثة عبر GoatCounter.';
       }
