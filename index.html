@@ -63,34 +63,11 @@
     (function () {
       'use strict';
 
-      function arabicDigits(value) {
-        return String(value).replace(/[0-9]/g, function (digit) {
-          return '٠١٢٣٤٥٦٧٨٩'[digit];
-        });
-      }
-
-      function convertTextNodes(root) {
-        var walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT);
-        var nodes = [];
-        var node;
-        while ((node = walker.nextNode())) nodes.push(node);
-        nodes.forEach(function (textNode) {
-          textNode.nodeValue = textNode.nodeValue.replace(/[0-9]/g, function (digit) {
-            return '٠١٢٣٤٥٦٧٨٩'[digit];
-          });
-        });
-      }
-
       function loadCounter(targetId, path) {
         var target = document.getElementById(targetId);
         if (!target || !window.goatcounter || !window.goatcounter.visit_count) return false;
 
         target.textContent = '';
-        var observer = new MutationObserver(function () {
-          convertTextNodes(target);
-        });
-        observer.observe(target, { childList: true, subtree: true, characterData: true });
-
         window.goatcounter.visit_count({
           append: '#' + targetId,
           type: 'html',
