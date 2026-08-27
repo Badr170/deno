@@ -15,5 +15,14 @@
 .feature-grid .featured-card .install-btn{right:20px;left:20px;bottom:18px;border:1px solid #818cf84d;border-radius:12px;background:linear-gradient(135deg,#6366f1,#4f46e5);box-shadow:0 8px 18px #4f46e52e}
 .feature-grid .featured-card .install-btn:hover{background:linear-gradient(135deg,#818cf8,#6366f1);box-shadow:0 10px 22px #6366f14d}
 .feature-grid .featured-card a,.feature-grid .featured-card h3,.feature-grid .featured-card span,.feature-grid .featured-card div{text-decoration:none!important;-webkit-text-decoration-line:none!important}
-@media(max-width:850px){.feature-grid .featured-card{min-height:240px}}
-@media(max-width:650px){.feature-grid .featured-card{min-height:225px;padding:18px;border-radius:19px}.feature-grid .featured-card:after{border-radius:18px}.feature-grid .featured-card .icon{width:58px;height:58px;flex-basis:58px}.feature-grid .featured-card .icon img{border-radius:16px}.feature-grid .featured-card .desc{font-size:.9rem}.feature-grid .featured-card .install-btn{right:18px;left:18px;bottom:16px}}
+/* Compact Arabic visit statistics */
+.stats-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+.stat-card{min-width:0}
+.visit-stat-card{min-height:150px;padding:18px;border-radius:18px;background:linear-gradient(145deg,#151e34,#0e1628);border:1px solid #ffffff12;box-shadow:0 10px 24px #00000022;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;overflow:hidden}
+.visit-stat-header{width:100%;display:flex;align-items:center;justify-content:center;gap:8px;font-size:1rem}
+.visit-stat-header .stat-icon{font-size:1.35rem}
+.goatcounter-visits{min-height:48px;width:100%;display:flex;align-items:center;justify-content:center;margin:4px 0}
+.goatcounter-visits svg{display:block;max-width:100%;height:auto}
+.visit-stat-total{color:#aab5cc;font-size:.85rem;margin-top:1px}
+@media(max-width:850px){.feature-grid .featured-card{min-height:240px}.stats-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.visit-stat-card{grid-column:1/-1}}
+@media(max-width:650px){.feature-grid .featured-card{min-height:225px;padding:18px;border-radius:19px}.feature-grid .featured-card:after{border-radius:18px}.feature-grid .featured-card .icon{width:58px;height:58px;flex-basis:58px}.feature-grid .featured-card .icon img{border-radius:16px}.feature-grid .featured-card .desc{font-size:.9rem}.feature-grid .featured-card .install-btn{right:18px;left:18px;bottom:16px}.stats-grid{grid-template-columns:1fr}.visit-stat-card{grid-column:auto;min-height:140px}}
