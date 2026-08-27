@@ -17,7 +17,10 @@
   }).filter(Boolean);
 
   const iconHtml = (icon) => safeUrl(icon) ? `<img src="${esc(icon)}" alt="" loading="lazy" referrerpolicy="no-referrer">` : '📦';
-  const cardHtml = (p) => `<a class="card" href="package.html?id=${encodeURIComponent(p.id)}"><div class="card-top"><div class="icon">${iconHtml(p.icon)}</div><div><h3>${esc(p.name)}</h3><div class="meta">الإصدار ${esc(p.version||'غير محدد')}</div></div></div><p class="desc">${esc(p.desc)}</p><div class="meta">${esc(p.section)}${p.author ? ` • ${esc(p.author)}` : ''}</div></a>`;
+
+  // Every package card has its own Sileo install button.
+  const cardHtml = (p) => `<article class="card package-card"><a class="card-link" href="package.html?id=${encodeURIComponent(p.id)}"><div class="card-top"><div class="icon">${iconHtml(p.icon)}</div><div><h3>${esc(p.name)}</h3><div class="meta">الإصدار ${esc(p.version||'غير محدد')}</div></div></div><p class="desc">${esc(p.desc)}</p><div class="meta">${esc(p.section)}${p.author ? ` • ${esc(p.author)}` : ''}</div></a><a class="install-btn" href="${packageUrl(p.id)}" aria-label="تثبيت ${esc(p.name)}" title="تثبيت ${esc(p.name)}">تثبيت</a></article>`;
+
   const featureHtml = (p) => `<article class="card feature-card featured-card"><a class="card-link" href="package.html?id=${encodeURIComponent(p.id)}"><div class="card-top"><div class="icon">${iconHtml(p.icon)}</div><div><h3>${esc(p.name)}</h3><div class="meta">الإصدار ${esc(p.version||'غير محدد')}</div></div></div><p class="desc">${esc(p.desc)}</p><div class="meta">${esc(p.section)}${p.author ? ` • ${esc(p.author)}` : ''}</div></a><a class="install-btn" href="${packageUrl(p.id)}" aria-label="تثبيت ${esc(p.name)}" title="تثبيت ${esc(p.name)}">تثبيت</a></article>`;
   const setStatus = (text) => { const el=$('stats-status'); if(el) el.textContent=text; };
 
