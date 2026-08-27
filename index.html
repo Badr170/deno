@@ -33,13 +33,13 @@
         <div class="stats-grid">
           <div class="stat-card visit-stat-card" aria-label="إحصائيات زيارات الموقع">
             <div class="visit-stat-header"><span class="stat-icon">📊</span><strong>عدد الزيارات</strong></div>
-            <div id="goatcounter-visits" class="goatcounter-visits" aria-live="polite"></div>
-            <div class="visit-stat-total">إجمالي زيارات الموقع</div>
+            <div class="visit-count-row"><span class="visit-count-label">زيارات الصفحة</span><strong id="goatcounter-page-count" class="visit-count-number" aria-live="polite">…</strong></div>
+            <div class="visit-count-row"><span class="visit-count-label">إجمالي زيارات الموقع</span><strong id="goatcounter-total-count" class="visit-count-number" aria-live="polite">…</strong></div>
           </div>
           <div class="stat-card"><span class="stat-icon">📦</span><strong id="package-total">—</strong><span>عدد الحزم</span></div>
           <div class="stat-card"><span class="stat-icon">🔗</span><a href="https://badr170.goatcounter.com/" target="_blank" rel="noopener noreferrer">لوحة الإحصائيات</a><span>فتح لوحة الإحصائيات</span></div>
         </div>
-        <p id="stats-status" class="section-note">يتم تسجيل زيارات الموقع تلقائيًا عبر عداد الزيارات.</p>
+        <p id="stats-status" class="section-note">يتم تحميل أرقام الزيارات من GoatCounter.</p>
       </section>
       <section id="updates" class="feature-section" aria-labelledby="updates-title">
         <div class="section-head feature-head"><div><span class="eyebrow">جديد</span><h2 id="updates-title">آخر التحديثات</h2></div><span class="count">أحدث الإصدارات</span></div>
@@ -62,17 +62,29 @@
   <script data-goatcounter="https://badr170.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
   <script>
     (function () {
-      var timer = setInterval(function () {
-        if (window.goatcounter && typeof window.goatcounter.visit_count === 'function') {
-          clearInterval(timer);
-          window.goatcounter.visit_count({
-            append: '#goatcounter-visits',
-            type: 'svg',
-            path: 'TOTAL',
-            style: '#gcvc-border { fill: #222; stroke: #fff; } #gcvc { fill: #fff; } #gcvc-for, #gcvc-by { display: none; } #gcvc-views { font-size: 34px; font-weight: 700; }'
+      'use strict';
+
+      var pageCountUrl = 'https://badr170.goatcounter.com/counter//.json';
+      var totalCountUrl = 'https://badr170.goatcounter.com/counter/TOTAL.json';
+
+      function loadVisitCount(url, targetId) {
+        fetch(url, { cache: 'no-store', credentials: 'omit' })
+          .then(function (response) {
+            if (!response.ok) throw new Error('GoatCounter request failed');
+            return response.json();
+          })
+          .then(function (data) {
+            var target = document.getElementById(targetId);
+            if (target) target.textContent = data && data.count != null ? String(data.count) : '—';
+          })
+          .catch(function () {
+            var target = document.getElementById(targetId);
+            if (target) target.textContent = '—';
           });
-        }
-      }, 100);
+      }
+
+      loadVisitCount(pageCountUrl, 'goatcounter-page-count');
+      loadVisitCount(totalCountUrl, 'goatcounter-total-count');
     })();
   </script>
   <script src="assets/js/repo.js?v=9"></script>
