@@ -31,7 +31,7 @@
       <section id="stats" class="stats-section" aria-labelledby="stats-title">
         <div class="section-head"><div><span class="eyebrow">LIVE</span><h2 id="stats-title">إحصائيات الموقع</h2></div><span class="count">GoatCounter</span></div>
         <div class="stats-grid">
-          <div class="stat-card"><span class="stat-icon">📊</span><strong>عدد الزيارات</strong><div id="goatcounter-visits" aria-live="polite"></div><span>إجمالي زيارات الموقع</span></div>
+          <div class="stat-card"><span class="stat-icon">📊</span><strong>عدد الزيارات</strong><div id="goatcounter-visits" aria-live="polite"><img src="https://badr170.goatcounter.com/counter/TOTAL.svg?v=1" alt="إجمالي زيارات الموقع" width="200" height="80"></div><span>إجمالي زيارات الموقع</span></div>
           <div class="stat-card"><span class="stat-icon">📦</span><strong id="package-total">—</strong><span>عدد الحزم</span></div>
           <div class="stat-card"><span class="stat-icon">🔗</span><a href="https://badr170.goatcounter.com/" target="_blank" rel="noopener noreferrer">لوحة الإحصائيات</a><span>فتح GoatCounter</span></div>
         </div>
@@ -55,22 +55,7 @@
     <footer class="footer">© Badr Repo — جميع الحقوق محفوظة</footer>
   </div>
   <noscript><div class="noscript">يجب تفعيل JavaScript لعرض الحزم والبحث والتصنيفات.</div></noscript>
-  <script data-goatcounter="https://badr170.goatcounter.com/count" src="https://gc.zgo.at/count.js"></script>
-  <script>
-    (function () {
-      var t = setInterval(function () {
-        if (window.goatcounter && typeof window.goatcounter.visit_count === 'function') {
-          clearInterval(t);
-          window.goatcounter.visit_count({
-            append: '#goatcounter-visits',
-            type: 'svg',
-            path: 'TOTAL',
-            style: '#gcvc-border { fill: #222; stroke: #fff; } #gcvc { fill: #fff; }'
-          });
-        }
-      }, 100);
-    })();
-  </script>
-  <script src="assets/js/repo.js?v=6"></script>
+  <script data-goatcounter="https://badr170.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+  <script src="assets/js/repo.js?v=7"></script>
 </body>
 </html>
