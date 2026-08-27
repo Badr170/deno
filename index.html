@@ -55,22 +55,22 @@
     <footer class="footer">© Badr Repo — جميع الحقوق محفوظة</footer>
   </div>
   <noscript><div class="noscript">يجب تفعيل JavaScript لعرض الحزم والبحث والتصنيفات.</div></noscript>
-  <script data-goatcounter="https://badr170.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+  <script data-goatcounter="https://badr170.goatcounter.com/count" src="https://gc.zgo.at/count.js"></script>
   <script>
-    var t = setInterval(function() {
-      if (window.goatcounter && window.goatcounter.visit_count) {
-        clearInterval(t);
-        window.goatcounter.visit_count({
-          append: '#goatcounter-visits',
-          type: 'svg',
-          style: `
-            #gcvc-border { fill: #222; stroke: #fff; }
-            #gcvc { fill: #fff; }
-          `
-        });
-      }
-    }, 100);
+    (function () {
+      var t = setInterval(function () {
+        if (window.goatcounter && typeof window.goatcounter.visit_count === 'function') {
+          clearInterval(t);
+          window.goatcounter.visit_count({
+            append: '#goatcounter-visits',
+            type: 'svg',
+            path: 'TOTAL',
+            style: '#gcvc-border { fill: #222; stroke: #fff; } #gcvc { fill: #fff; }'
+          });
+        }
+      }, 100);
+    })();
   </script>
-  <script src="assets/js/repo.js?v=5"></script>
+  <script src="assets/js/repo.js?v=6"></script>
 </body>
 </html>
