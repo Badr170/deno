@@ -2,12 +2,15 @@ name: Generate Sitemap
 
 on:
   push:
-    branches: [main]
+    branches:
+      - main
     paths:
-      - 'Packages'
+      - "Packages"
+
   workflow_dispatch:
+
   schedule:
-    - cron: '0 3 * * *'
+    - cron: "0 3 * * *"
 
 permissions:
   contents: write
@@ -15,6 +18,7 @@ permissions:
 jobs:
   sitemap:
     runs-on: ubuntu-latest
+
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -23,40 +27,95 @@ jobs:
         shell: bash
         run: |
           python3 <<'PY'
-          from html import escape
           from pathlib import Path
-          import re
+          from urllib.parse import quote
           from datetime import date
+          import re
 
-          BASE = 'https://badr170.github.io/deno/'
-          packages = Path('Packages').read_text(encoding='utf-8', errors='replace')
-          ids = re.findall(r'^Package:\s*(\S+)\s*$', packages, flags=re.MULTILINE)
+          BASE = "https://badr170.github.io/deno/"
+          packages_file = Path("Packages")
 
-          # Keep order, remove duplicates.
+          if not packages_file.exists():
+              raise SystemExit("ERROR: Packages file was not found.")
+
+          packages = packages_file.read_text(
+              encoding="utf-8",
+              errors="replace"
+          )
+
+          ids = re.findall(
+              r"^Package:\s*(\S+)\s*$",
+              packages,
+              flags=re.MULTILINE
+          )
+
           ids = list(dict.fromkeys(ids))
-
           urls = [BASE]
-          urls += [BASE + 'package.html?id=' + escape(pkg, quote=True) for pkg in ids]
+
+          for package_id in ids:
+              encoded_id = quote(package_id, safe="")
+              urls.append(f"{BASE}package.html?id={encoded_id}")
 
           today = date.today().isoformat()
-          body = ['<?xml version="1.0" encoding="UTF-8"?>',
-                  '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">']
+
+          sitemap = [
+              '<?xml version="1.0" encoding="UTF-8"?>',
+              '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">'
+          ]
+
           for url in urls:
-              body += ['  <url>', f'    <loc>{url}</loc>', f'    <lastmod>{today}</lastmod>', '  </url>']
-          body.append('</urlset>')
-          Path('sitemap.xml').write_text('\n'.join(body) + '\n', encoding='utf-8')
-          print(f'Generated sitemap.xml with {len(urls)} URLs ({len(ids)} packages).')
+              sitemap.extend([
+                  "  <url>",
+                  f"    <loc>{url}</loc>",
+                  f"    <lastmod>{today}</lastmod>",
+                  "  </url>"
+              ])
+
+          sitemap.append("</urlset>")
+
+          Path("sitemap.xml").write_text(
+              "\n".join(sitemap) + "\n",
+              encoding="utf-8"
+          )
+
+          print(
+              f"Generated sitemap.xml with {len(urls)} URLs "
+              f"({len(ids)} packages)."
+          )
+          PY
+
+      - name: Validate sitemap
+        shell: bash
+        run: |
+          python3 <<'PY'
+          from pathlib import Path
+          import xml.etree.ElementTree as ET
+
+          sitemap = Path("sitemap.xml")
+
+          if not sitemap.exists():
+              raise SystemExit("ERROR: sitemap.xml was not created.")
+
+          try:
+              ET.parse(sitemap)
+          except ET.ParseError as error:
+              raise SystemExit(f"ERROR: Invalid sitemap.xml: {error}")
+
+          print("Sitemap XML validation passed.")
           PY
 
       - name: Commit sitemap if changed
         shell: bash
         run: |
-          git config user.name 'github-actions[bot]'
-          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
           git add sitemap.xml
+
           if git diff --cached --quiet; then
-            echo 'Sitemap is already up to date.'
+            echo "Sitemap is already up to date."
             exit 0
           fi
-          git commit -m 'تحديث Sitemap تلقائيًا للحزم'
+
+          git commit -m "تحديث Sitemap تلقائيًا للحزم"
           git push
